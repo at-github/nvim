@@ -22,3 +22,6 @@ vim.o.smartindent = true
 vim.o.tabstop = 4 -- 1 tab = 4 spaces
 vim.o.shiftwidth = 4 -- indentation rule
 vim.o.expandtab = true -- expand tab to spaces
+
+-- Mapping
+vim.api.nvim_set_keymap('n', '<F5><cr>', ':e!', { noremap = true })
