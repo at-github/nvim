@@ -1,7 +1,7 @@
 # nvim
 
 ## Notes
-Neovim must be above 0.5
+Neovim must be above 0.5 to work well with lua config
 
 ## Some resources
 - https://teukka.tech/luanvim.html
