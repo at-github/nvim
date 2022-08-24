@@ -29,12 +29,11 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 ### Maybe without plugin
 - [ ] indent setting by language
 - [ ] spell check, FR & EN
-- [ ] set ruler ?
 - [ ] max line length highlight
 - [ ] nice & robust setting for tags
+- [ ] smart indentation on paste from clipboard
 
 ### With plugin
-- [ ] surround
 - [ ] comment quickly
 - [ ] like ctrlp
 - [ ] jump chunk to chunk
@@ -59,6 +58,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 - [ ] succed to put plugin config in a separate file
 
 ### Done
+- [X] surround
 - [X] compile when needed
 - [X] like nerdtree
 - [X] map f5 to `:e!`
