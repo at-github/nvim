@@ -75,13 +75,22 @@ _G.packer_plugins = {
     url = "https://github.com/EdenEast/nightfox.nvim"
   },
   ["nvim-tree.lua"] = {
-    loaded = true,
-    path = "/home/tarik/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    after = { "nvim-web-devicons" },
+    commands = { "NvimTreeToggle", "NvimTreeFindFile" },
+    config = { "\27LJ\2\2²\1\0\0\4\0\b\0\v6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\6\0005\2\3\0005\3\4\0=\3\5\2=\2\a\1B\0\2\1K\0\1\0\ffilters\1\0\4\16open_on_tab\2\18hijack_cursor\2\18open_on_setup\2\23open_on_setup_file\2\vcustom\1\2\0\0\t.git\1\0\1\rdotfiles\1\nsetup\14nvim-tree\frequire\0" },
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/home/tarik/.local/share/nvim/site/pack/packer/opt/nvim-tree.lua",
     url = "https://github.com/kyazdani42/nvim-tree.lua"
   },
   ["nvim-web-devicons"] = {
-    loaded = true,
-    path = "/home/tarik/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    load_after = {
+      ["nvim-tree.lua"] = true
+    },
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/tarik/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["packer.nvim"] = {
@@ -97,6 +106,13 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+
+-- Command lazy-loads
+time([[Defining lazy-load commands]], true)
+pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file NvimTreeFindFile lua require("packer.load")({'nvim-tree.lua'}, { cmd = "NvimTreeFindFile", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
+pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file NvimTreeToggle lua require("packer.load")({'nvim-tree.lua'}, { cmd = "NvimTreeToggle", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
+time([[Defining lazy-load commands]], false)
+
 if should_profile then save_profiles() end
 
 end)

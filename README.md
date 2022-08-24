@@ -32,6 +32,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 - [ ] nice & robust setting for tags
 - [ ] set ruler
 - [ ] spell check, FR & EN
+- [ ] compile when needed
 
 ### With plugin
 - [ ] surround

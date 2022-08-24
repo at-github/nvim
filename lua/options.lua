@@ -19,8 +19,8 @@ vim.o.smartcase = true -- case insentive unless capitals used in search
 
 -- White characters
 vim.o.smartindent = true
-vim.o.tabstop = 2 -- 1 tab = 4 spaces
-vim.o.shiftwidth = 4 -- indentation rule
+vim.o.tabstop = 2 -- 1 tab = 2 spaces
+vim.o.shiftwidth = 2 -- indentation rule
 vim.o.expandtab = true -- expand tab to spaces
 
 -- Mapping
