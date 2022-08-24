@@ -7,6 +7,11 @@ Neovim must be above 0.5
 - https://teukka.tech/luanvim.html
 - https://github.com/nanotee/nvim-lua-guide
 
+## Satisfying (trying) checkhealth
+To check run `:checkhealth` in neovim
+- Check latest version of `pynvim` is installed (via pip)
+- Check npm neovim is installed, but still no enough
+
 ## Plugin manager: Packer
 ### For the first use
 [source](https://github.com/wbthomason/packer.nvim#quickstart)
@@ -33,7 +38,13 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 - [ ] markdown ? not easy for code blocks
 - [ ] a nice completion please
 - [ ] comment quickly
-- [ ] syntax for: sql, php, javascript, react, lua
+- [ ] syntax for:
+    - [ ] sql
+    - [ ] php
+    - [ ] javascript
+    - [ ] react
+    - [ ] typescript
+    - [ ] lua
 - [ ] snippets
 - [ ] like ctrlp
 - [ ] visual search
