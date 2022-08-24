@@ -34,7 +34,6 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 - [ ] smart indentation on paste from clipboard
 
 ### With plugin
-- [ ] comment quickly
 - [ ] like ctrlp
 - [ ] jump chunk to chunk
 - [ ] like vim gutter
@@ -58,6 +57,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 - [ ] succed to put plugin config in a separate file
 
 ### Done
+- [X] comment quickly
 - [X] surround
 - [X] compile when needed
 - [X] like nerdtree

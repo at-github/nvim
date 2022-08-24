@@ -37,5 +37,11 @@ return require('packer').startup(function(use)
         require("nvim-surround").setup()
       end
     })
+    use({
+      'terrortylor/nvim-comment',
+      config = function()
+        require('nvim_comment').setup()
+      end
+    })
   end
 )
