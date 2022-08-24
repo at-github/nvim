@@ -1,14 +1,16 @@
-local packer = require("packer")
-local use = packer.use
+vim.cmd([[
+  augroup packer_user_config
+    autocmd!
+    autocmd BufWritePost plugins.lua source <afile> | PackerCompile
+  augroup end
+]])
 
-return packer.startup(
-  function()
+return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
 
     use 'tpope/vim-fugitive' -- Git commands
     use "EdenEast/nightfox.nvim" -- Themes
 
-    -- WIP
     use {
       'kyazdani42/nvim-tree.lua',
       opt = true,
@@ -18,6 +20,7 @@ return packer.startup(
       cmd = {"NvimTreeToggle", "NvimTreeFindFile"},
       config = function()
         require("nvim-tree").setup {
+          -- TODO one day try again to put config another place
           filters = {
             dotfiles = false,
             custom = {'.git'}

@@ -27,18 +27,20 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 
 ## What i want from my previous config
 ### Maybe without plugin
-- [ ] max line length
 - [ ] indent setting by language
-- [ ] nice & robust setting for tags
-- [ ] set ruler
 - [ ] spell check, FR & EN
-- [ ] compile when needed
+- [ ] set ruler
+- [ ] max line length
+- [ ] nice & robust setting for tags
 
 ### With plugin
 - [ ] surround
+- [ ] comment quickly
+- [ ] like ctrlp
+- [ ] jump chunk to chunk
+- [ ] like vim gutter
 - [ ] markdown ? not easy for code blocks
 - [ ] a nice completion please
-- [ ] comment quickly
 - [ ] syntax for:
     - [ ] sql
     - [ ] php
@@ -47,12 +49,11 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
     - [ ] typescript
     - [ ] lua
 - [ ] snippets
-- [ ] like ctrlp
 - [ ] visual search
-- [ ] like vim gutter
-- [ ] jump chunk to chunk
 - [ ] linter
+- [ ] succed to put plugin config in a separate file
 
 ### Done
-- [X] map f5 to `:e!`
+- [X] compile when needed
 - [X] like nerdtree
+- [X] map f5 to `:e!`
