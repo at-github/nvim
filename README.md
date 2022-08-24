@@ -29,8 +29,8 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 ### Maybe without plugin
 - [ ] indent setting by language
 - [ ] spell check, FR & EN
-- [ ] set ruler
-- [ ] max line length
+- [ ] set ruler ?
+- [ ] max line length highlight
 - [ ] nice & robust setting for tags
 
 ### With plugin
@@ -47,7 +47,12 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
     - [ ] javascript
     - [ ] react
     - [ ] typescript
+    - [ ] ruby
+    - [ ] python
     - [ ] lua
+    - [ ] shell
+    - [ ] nginx
+    - [ ] docker
 - [ ] snippets
 - [ ] visual search
 - [ ] linter
