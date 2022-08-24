@@ -35,7 +35,6 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 - [ ] comment quickly
 - [ ] syntax for: sql, php, javascript, react, lua
 - [ ] snippets
-- [ ] like nerdtree
 - [ ] like ctrlp
 - [ ] visual search
 - [ ] like vim gutter
@@ -44,3 +43,4 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 
 ### Done
 - [X] map f5 to `:e!`
+- [X] like nerdtree

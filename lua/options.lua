@@ -19,9 +19,10 @@ vim.o.smartcase = true -- case insentive unless capitals used in search
 
 -- White characters
 vim.o.smartindent = true
-vim.o.tabstop = 4 -- 1 tab = 4 spaces
+vim.o.tabstop = 2 -- 1 tab = 4 spaces
 vim.o.shiftwidth = 4 -- indentation rule
 vim.o.expandtab = true -- expand tab to spaces
 
 -- Mapping
-vim.api.nvim_set_keymap('n', '<F5><cr>', ':e!', { noremap = true })
+vim.api.nvim_set_keymap('n', '<F5>', ':e!<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<Leader>e', ':NvimTreeToggle<CR>', { noremap = true })
