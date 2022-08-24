@@ -35,8 +35,6 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 
 ### With plugin
 - [ ] like ctrlp
-- [ ] jump chunk to chunk
-- [ ] like vim gutter
 - [ ] markdown ? not easy for code blocks
 - [ ] a nice completion please
 - [ ] syntax for:
@@ -57,6 +55,8 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 - [ ] succed to put plugin config in a separate file
 
 ### Done
+- [X] jump chunk to chunk
+- [X] like vim gutter
 - [X] comment quickly
 - [X] surround
 - [X] compile when needed
