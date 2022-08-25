@@ -22,6 +22,35 @@ return require('packer').startup(function(use)
     }
 
     use {
+      'romgrk/barbar.nvim',
+      requires = {'kyazdani42/nvim-web-devicons'},
+      config = function()
+        require('bufferline').setup {
+          tabpages = false
+        }
+
+        -- to shift tabs when nerdtree is open
+        vim.api.nvim_create_autocmd('BufWinEnter', {
+          pattern = '*',
+          callback = function()
+            if vim.bo.filetype == 'NvimTree' then
+              require'bufferline.state'.set_offset(31, 'FileTree')
+            end
+          end
+        })
+
+        vim.api.nvim_create_autocmd('BufWinLeave', {
+          pattern = '*',
+          callback = function()
+            if vim.fn.expand('<afile>'):match('NvimTree') then
+              require'bufferline.state'.set_offset(0)
+            end
+          end
+        })
+      end
+    }
+
+    use {
       'feline-nvim/feline.nvim',
       branch = '0.5-compat',
       config = function()
