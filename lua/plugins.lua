@@ -55,6 +55,7 @@ return require('packer').startup(function(use)
               vim.keymap.set(mode, l, r, opts)
             end
 
+            -- Couldn’t move those in mappin.lua
             -- Navigation
             map('n', ']c', function()
               if vim.wo.diff then return ']c' end
@@ -80,5 +81,9 @@ return require('packer').startup(function(use)
         }
       end
     })
+    use {
+      'nvim-telescope/telescope.nvim', tag = '0.1.0',
+      requires = {{'nvim-lua/plenary.nvim'}}
+    }
   end
 )

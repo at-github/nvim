@@ -25,6 +25,15 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 > Regenerate compiled loader file
 > `:PackerCompile`
 
+## External dependancies
+- `ripgrep`
+- `fd-find`
+- `python3`
+- `pip`
+- `pynvim`
+- `npm`
+- `npm neovim`
+
 ## What i want from my previous config
 ### Maybe without plugin
 - [ ] spell check, FR & EN
@@ -33,7 +42,6 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 - [ ] smart indentation on paste from clipboard
 
 ### With plugin
-- [ ] like ctrlp
 - [ ] markdown ? not easy for code blocks
 - [ ] a nice completion please
 - [ ] syntax for:
@@ -54,6 +62,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 - [ ] succed to put plugin config in a separate file
 
 ### Done
+- [X] ~~like ctrlp~~ telescope
 - [X] indent setting by language
 - [X] jump chunk to chunk
 - [X] like vim gutter
