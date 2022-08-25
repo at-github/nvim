@@ -9,7 +9,17 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
 
     use 'tpope/vim-fugitive' -- Git commands
-    use "EdenEast/nightfox.nvim" -- Themes
+    use 'EdenEast/nightfox.nvim' -- Themes
+    use {
+      'navarasu/onedark.nvim', -- Themes
+      config = function()
+        require('onedark').setup{
+          -- dark, darker, warm, warmer
+          style = 'warm'
+        }
+        require('onedark').load()
+      end
+    }
     use {
       'kyazdani42/nvim-tree.lua',
       opt = true,
