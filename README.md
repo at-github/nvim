@@ -42,8 +42,9 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 - [ ] max line length highlight
 - [ ] nice & robust setting for tags
 - [ ] smart indentation on paste from clipboard
-- [ ] keep columns for gitsigns
-- [ ] On open jump line of the history
+- [ ] keep column width for gitsigns
+  - when line was deleted, or after add to stage
+- [ ] On open jump line of the history
 
 ### With plugin
 - [ ] succed to put plugin config in a separate file
