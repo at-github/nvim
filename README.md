@@ -43,10 +43,10 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 - [ ] nice & robust setting for tags
 - [ ] smart indentation on paste from clipboard
 - [ ] keep columns for gitsigns
+- [ ] On open jump line of the history
 
 ### With plugin
 - [ ] succed to put plugin config in a separate file
-- [ ] pair
 - [ ] a nice completion please
   - No easy response, i want nice completion mainly for javascript & php.
   Php often not really supported by vim & neovim community
@@ -77,6 +77,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
     - [ ] docker
 
 ### Done
+- [X] pair
 - [X] visual search
 - [X] Visual status bar
 - [X] markdown ? not easy for code blocks

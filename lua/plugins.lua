@@ -134,6 +134,11 @@ return require('packer').startup(function(use)
     }
 
     use {
+      'nvim-telescope/telescope.nvim', tag = '0.1.0',
+      requires = {'nvim-lua/plenary.nvim'}
+    }
+
+    use {
       'lukas-reineke/indent-blankline.nvim',
       config = function()
         require("indent_blankline").setup {
@@ -159,6 +164,11 @@ return require('packer').startup(function(use)
       config = function()
         require('nvim_comment').setup()
       end
+    }
+
+    use {
+      'windwp/nvim-autopairs',
+      config = function() require('nvim-autopairs').setup {} end
     }
 
     use {
@@ -199,11 +209,6 @@ return require('packer').startup(function(use)
           end
         }
       end
-    }
-
-    use {
-      'nvim-telescope/telescope.nvim', tag = '0.1.0',
-      requires = {{'nvim-lua/plenary.nvim'}}
     }
   end
 )
