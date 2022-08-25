@@ -17,11 +17,17 @@ vim.o.numberwidth = 3 -- always reserve 3 spaces for line number
 vim.o.ignorecase = true -- ignore letter case when searching
 vim.o.smartcase = true -- case insentive unless capitals used in search
 
--- White characters
+-- tabs
 vim.o.smartindent = true
 vim.o.tabstop = 2 -- 1 tab = 2 spaces
 vim.o.shiftwidth = 2 -- indentation rule
 vim.o.expandtab = true -- expand tab to spaces
+
+vim.cmd([[
+  augroup tab_for_python
+    autocmd FileType python setlocal ts=4 sts=4 sw=4 expandtab
+  augroup end
+]])
 
 -- Mapping
 vim.api.nvim_set_keymap('n', '<F5>', ':e!<CR>', { noremap = true })
