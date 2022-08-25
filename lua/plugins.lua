@@ -21,14 +21,46 @@ return require('packer').startup(function(use)
       end
     }
     use {
+      'nvim-treesitter/nvim-treesitter',
+      config = function()
+        require('nvim-treesitter.configs').setup {
+          -- A list of parser names, or 'all'
+          ensure_installed = {
+            'css',
+            'dockerfile',
+            'html',
+            'javascript',
+            'jsdoc',
+            'json',
+            'json5',
+            'lua',
+            'make',
+            'markdown',
+            'ninja',
+            'php',
+            'python',
+            'regex',
+            'ruby',
+            'scss',
+            'sql',
+            'tsx',
+            'typescript',
+            'yaml'
+          },
+          -- Automatically install missing parsers when entering buffer
+          auto_install = true,
+        }
+      end
+    }
+    use {
       'kyazdani42/nvim-tree.lua',
       opt = true,
       requires = {
         'kyazdani42/nvim-web-devicons',
       },
-      cmd = {"NvimTreeToggle", "NvimTreeFindFile"},
+      cmd = {'NvimTreeToggle', 'NvimTreeFindFile'},
       config = function()
-        require("nvim-tree").setup {
+        require('nvim-tree').setup {
           -- TODO one day try again to put config another place
           filters = {
             dotfiles = false,
@@ -40,10 +72,10 @@ return require('packer').startup(function(use)
       end
     }
     use({
-      "kylechui/nvim-surround",
-      tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+      'kylechui/nvim-surround',
+      tag = '*', -- Use for stability; omit to use `main` branch for the latest features
       config = function()
-        require("nvim-surround").setup()
+        require('nvim-surround').setup()
       end
     })
     use({
