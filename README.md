@@ -35,19 +35,35 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 - `npm neovim`
 
 <details>
- <summary>What i want from my previous config</summary>
+ <summary>What i want</summary>
 
 ### Maybe without plugin
 - [ ] spell check, FR & EN
 - [ ] max line length highlight
 - [ ] nice & robust setting for tags
 - [ ] smart indentation on paste from clipboard
+- [ ] keep columns for gitsigns
 
 ### With plugin
+- [ ] succed to put plugin config in a separate file
+- [ ] pair
 - [ ] a nice completion please
   - No easy response, i want nice completion mainly for javascript & php.
   Php often not really supported by vim & neovim community
-- [ ] syntax for:
+  - candidates:
+    - coc
+    - nvim-comp
+  - Order suggestion:
+    1. definition
+    2. buffer
+    3. clipboard never
+- [ ] snippets
+- [ ] linter
+  - candidates:
+    - ALE
+    - nvim-lint
+    - nvim-lspconfig
+  - for:
     - [ ] sql
     - [ ] php
     - [ ] javascript
@@ -59,12 +75,9 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
     - [ ] shell
     - [ ] nginx
     - [ ] docker
-- [ ] snippets
-- [ ] visual search
-- [ ] linter
-- [ ] succed to put plugin config in a separate file
 
 ### Done
+- [X] visual search
 - [X] Visual status bar
 - [X] markdown ? not easy for code blocks
   - Finally no plugin for markdown, the visual out of the box suit to me.

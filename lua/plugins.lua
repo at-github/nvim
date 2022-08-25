@@ -50,6 +50,8 @@ return require('packer').startup(function(use)
       end
     }
 
+    use 'nelstrom/vim-visual-star-search'
+
     use {
       'feline-nvim/feline.nvim',
       branch = '0.5-compat',
@@ -77,6 +79,7 @@ return require('packer').startup(function(use)
     }
 
     use 'junegunn/goyo.vim'
+
     use {
       'nvim-treesitter/nvim-treesitter',
       config = function()
@@ -130,7 +133,7 @@ return require('packer').startup(function(use)
       end
     }
 
-    use({
+    use {
       'lukas-reineke/indent-blankline.nvim',
       config = function()
         require("indent_blankline").setup {
@@ -141,24 +144,24 @@ return require('packer').startup(function(use)
           show_first_indent_level= false,
         }
       end
-    })
+    }
 
-    use({
+    use {
       'kylechui/nvim-surround',
       tag = '*', -- Use for stability; omit to use `main` branch for the latest features
       config = function()
         require('nvim-surround').setup()
       end
-    })
+    }
 
-    use({
+    use {
       'terrortylor/nvim-comment',
       config = function()
         require('nvim_comment').setup()
       end
-    })
+    }
 
-    use({
+    use {
       'lewis6991/gitsigns.nvim',
       config = function()
         require('gitsigns').setup {
@@ -196,7 +199,7 @@ return require('packer').startup(function(use)
           end
         }
       end
-    })
+    }
 
     use {
       'nvim-telescope/telescope.nvim', tag = '0.1.0',
