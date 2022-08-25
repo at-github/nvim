@@ -20,6 +20,7 @@ return require('packer').startup(function(use)
         require('onedark').load()
       end
     }
+
     use {
       'feline-nvim/feline.nvim',
       branch = '0.5-compat',
@@ -45,6 +46,7 @@ return require('packer').startup(function(use)
         })
       end
     }
+
     use 'junegunn/goyo.vim'
     use {
       'nvim-treesitter/nvim-treesitter',
@@ -78,6 +80,7 @@ return require('packer').startup(function(use)
         }
       end
     }
+
     use {
       'kyazdani42/nvim-tree.lua',
       opt = true,
@@ -97,6 +100,20 @@ return require('packer').startup(function(use)
         }
       end
     }
+
+    use({
+      'lukas-reineke/indent-blankline.nvim',
+      config = function()
+        require("indent_blankline").setup {
+          char = '┆',
+          show_current_context = true, -- globally enable or not
+          show_current_context_start = true, -- signature (or just start object) context
+          show_trailing_blankline_indent = false,
+          show_first_indent_level= false,
+        }
+      end
+    })
+
     use({
       'kylechui/nvim-surround',
       tag = '*', -- Use for stability; omit to use `main` branch for the latest features
@@ -104,12 +121,14 @@ return require('packer').startup(function(use)
         require('nvim-surround').setup()
       end
     })
+
     use({
       'terrortylor/nvim-comment',
       config = function()
         require('nvim_comment').setup()
       end
     })
+
     use({
       'lewis6991/gitsigns.nvim',
       config = function()
@@ -149,6 +168,7 @@ return require('packer').startup(function(use)
         }
       end
     })
+
     use {
       'nvim-telescope/telescope.nvim', tag = '0.1.0',
       requires = {{'nvim-lua/plenary.nvim'}}

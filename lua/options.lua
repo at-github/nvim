@@ -8,7 +8,8 @@ vim.o.completeopt = 'menuone,noselect'
 vim.o.backspace = 'indent,eol,start' -- backspace works on every char in insert mode
 vim.o.synmaxcol = 300 -- stop syntax highlight after x lines for performance
 vim.o.foldmethod = 'syntax' -- use language syntax to generate folds
-vim.o.showbreak= '↪' -- character to show when line is broken
+vim.o.showbreak = '↪' -- character to show when line is broken
+vim.opt.termguicolors = true
 
 -- Sidebar
 vim.o.number = true
