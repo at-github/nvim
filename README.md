@@ -34,7 +34,9 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 - `npm`
 - `npm neovim`
 
-## What i want from my previous config
+<details>
+ <summary>What i want from my previous config</summary>
+
 ### Maybe without plugin
 - [ ] spell check, FR & EN
 - [ ] max line length highlight
@@ -71,3 +73,4 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 - [X] compile when needed
 - [X] like nerdtree
 - [X] map f5 to `:e!`
+</details>
