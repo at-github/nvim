@@ -44,8 +44,9 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 - [ ] smart indentation on paste from clipboard
 
 ### With plugin
-- [ ] markdown ? not easy for code blocks
 - [ ] a nice completion please
+  - No easy response, i want nice completion mainly for javascript & php.
+  Php often not really supported by vim & neovim community
 - [ ] syntax for:
     - [ ] sql
     - [ ] php
@@ -64,6 +65,10 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 - [ ] succed to put plugin config in a separate file
 
 ### Done
+- [X] Visual status bar
+- [X] markdown ? not easy for code blocks
+  - Finally no plugin for markdown, the visual out of the box suit to me.
+  Just add goyo, having a clear space when i'm not coding
 - [X] ~~like ctrlp~~ telescope
 - [X] indent setting by language
 - [X] jump chunk to chunk
