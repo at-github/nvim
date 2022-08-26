@@ -13,38 +13,13 @@ return require('packer').startup(function(use)
     use 'EdenEast/nightfox.nvim' -- Themes
     use {
       'navarasu/onedark.nvim', -- Themes
-      config = function()
-        require('plugins.onedark')
-      end
+      config = function() require'plugins.onedark' end
     }
 
     use {
       'romgrk/barbar.nvim',
       requires = {'kyazdani42/nvim-web-devicons'},
-      config = function()
-        require('bufferline').setup {
-          tabpages = false
-        }
-
-        -- to shift tabs when nerdtree is open
-        vim.api.nvim_create_autocmd('BufWinEnter', {
-          pattern = '*',
-          callback = function()
-            if vim.bo.filetype == 'NvimTree' then
-              require'bufferline.state'.set_offset(31, 'FileTree')
-            end
-          end
-        })
-
-        vim.api.nvim_create_autocmd('BufWinLeave', {
-          pattern = '*',
-          callback = function()
-            if vim.fn.expand('<afile>'):match('NvimTree') then
-              require'bufferline.state'.set_offset(0)
-            end
-          end
-        })
-      end
+      config = function() require'plugins.barbar' end
     }
 
     use 'nelstrom/vim-visual-star-search'

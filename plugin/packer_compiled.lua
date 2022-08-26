@@ -70,7 +70,7 @@ time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["barbar.nvim"] = {
-    config = { "\27LJ\2\2Å\1\0\0\3\0\b\0\r6\0\0\0009\0\1\0009\0\2\0\a\0\3\0X\0\aÄ6\0\4\0'\1\5\0B\0\2\0029\0\6\0)\1\31\0'\2\a\0B\0\3\1K\0\1\0\rFileTree\15set_offset\21bufferline.state\frequire\rNvimTree\rfiletype\abo\bvimò\1\0\0\3\0\t\0\0186\0\0\0009\0\1\0009\0\2\0'\1\3\0B\0\2\2\18\1\0\0009\0\4\0'\2\5\0B\0\3\2\15\0\0\0X\1\6Ä6\0\6\0'\1\a\0B\0\2\0029\0\b\0)\1\0\0B\0\2\1K\0\1\0\15set_offset\21bufferline.state\frequire\rNvimTree\nmatch\f<afile>\vexpand\afn\bvim‚\1\1\0\4\0\14\0\0236\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0B\0\2\0016\0\4\0009\0\5\0009\0\6\0'\1\a\0005\2\b\0003\3\t\0=\3\n\2B\0\3\0016\0\4\0009\0\5\0009\0\6\0'\1\v\0005\2\f\0003\3\r\0=\3\n\2B\0\3\1K\0\1\0\0\1\0\1\fpattern\6*\16BufWinLeave\rcallback\0\1\0\1\fpattern\6*\16BufWinEnter\24nvim_create_autocmd\bapi\bvim\1\0\1\rtabpages\1\nsetup\15bufferline\frequire\0" },
+    config = { "\27LJ\2\2.\0\0\2\0\2\0\0046\0\0\0'\1\1\0B\0\2\1K\0\1\0\19plugins.barbar\frequire\0" },
     loaded = true,
     path = "/home/tarik/.local/share/nvim/site/pack/packer/start/barbar.nvim",
     url = "https://github.com/romgrk/barbar.nvim"
@@ -181,7 +181,7 @@ try_loadstring("\27LJ\2\2Ú\1\0\0\3\0\6\0\t6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\4\
 time([[Config for nvim-treesitter]], false)
 -- Config for: barbar.nvim
 time([[Config for barbar.nvim]], true)
-try_loadstring("\27LJ\2\2Å\1\0\0\3\0\b\0\r6\0\0\0009\0\1\0009\0\2\0\a\0\3\0X\0\aÄ6\0\4\0'\1\5\0B\0\2\0029\0\6\0)\1\31\0'\2\a\0B\0\3\1K\0\1\0\rFileTree\15set_offset\21bufferline.state\frequire\rNvimTree\rfiletype\abo\bvimò\1\0\0\3\0\t\0\0186\0\0\0009\0\1\0009\0\2\0'\1\3\0B\0\2\2\18\1\0\0009\0\4\0'\2\5\0B\0\3\2\15\0\0\0X\1\6Ä6\0\6\0'\1\a\0B\0\2\0029\0\b\0)\1\0\0B\0\2\1K\0\1\0\15set_offset\21bufferline.state\frequire\rNvimTree\nmatch\f<afile>\vexpand\afn\bvim‚\1\1\0\4\0\14\0\0236\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0B\0\2\0016\0\4\0009\0\5\0009\0\6\0'\1\a\0005\2\b\0003\3\t\0=\3\n\2B\0\3\0016\0\4\0009\0\5\0009\0\6\0'\1\v\0005\2\f\0003\3\r\0=\3\n\2B\0\3\1K\0\1\0\0\1\0\1\fpattern\6*\16BufWinLeave\rcallback\0\1\0\1\fpattern\6*\16BufWinEnter\24nvim_create_autocmd\bapi\bvim\1\0\1\rtabpages\1\nsetup\15bufferline\frequire\0", "config", "barbar.nvim")
+try_loadstring("\27LJ\2\2.\0\0\2\0\2\0\0046\0\0\0'\1\1\0B\0\2\1K\0\1\0\19plugins.barbar\frequire\0", "config", "barbar.nvim")
 time([[Config for barbar.nvim]], false)
 -- Config for: nvim-surround
 time([[Config for nvim-surround]], true)
