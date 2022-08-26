@@ -142,7 +142,7 @@ _G.packer_plugins = {
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["onedark.nvim"] = {
-    config = { "\27LJ\2\2`\0\0\2\0\5\0\f6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0B\0\2\0016\0\0\0'\1\1\0B\0\2\0029\0\4\0B\0\1\1K\0\1\0\tload\1\0\1\nstyle\twarm\nsetup\fonedark\frequire\0" },
+    config = { "\27LJ\2\2/\0\0\2\0\2\0\0046\0\0\0'\1\1\0B\0\2\1K\0\1\0\20plugins.onedark\frequire\0" },
     loaded = true,
     path = "/home/tarik/.local/share/nvim/site/pack/packer/start/onedark.nvim",
     url = "https://github.com/navarasu/onedark.nvim"
@@ -197,7 +197,7 @@ try_loadstring("\27LJ\2\2W\0\4\t\1\4\0\14\14\0\3\0X\4\1€4\3\0\0-\4\0\0=\4\0\0036
 time([[Config for gitsigns.nvim]], false)
 -- Config for: onedark.nvim
 time([[Config for onedark.nvim]], true)
-try_loadstring("\27LJ\2\2`\0\0\2\0\5\0\f6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0B\0\2\0016\0\0\0'\1\1\0B\0\2\0029\0\4\0B\0\1\1K\0\1\0\tload\1\0\1\nstyle\twarm\nsetup\fonedark\frequire\0", "config", "onedark.nvim")
+try_loadstring("\27LJ\2\2/\0\0\2\0\2\0\0046\0\0\0'\1\1\0B\0\2\1K\0\1\0\20plugins.onedark\frequire\0", "config", "onedark.nvim")
 time([[Config for onedark.nvim]], false)
 -- Config for: feline.nvim
 time([[Config for feline.nvim]], true)

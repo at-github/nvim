@@ -52,7 +52,9 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
   - `]p`
 
 ### With plugin
-- [ ] succed to put plugin config in a separate file
+- [ ] barbar
+  - [ ] use tab instead classic buffer
+  - [ ] visual order cycling
 - [ ] a nice completion please
   - No easy response, i want nice completion mainly for javascript & php.
   Php often not really supported by vim & neovim community
@@ -81,9 +83,9 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
     - [ ] shell
     - [ ] nginx
     - [ ] docker
- - [ ] barbar use tab instead classic buffer
 
 ### Done
+- [X] succed to put plugin config in a separate file
 - [X] pair
 - [X] visual search
 - [X] Visual status bar

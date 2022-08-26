@@ -1,3 +1,4 @@
+-- Compile each time this file is edited
 vim.cmd([[
   augroup packer_user_config
     autocmd!
@@ -13,11 +14,7 @@ return require('packer').startup(function(use)
     use {
       'navarasu/onedark.nvim', -- Themes
       config = function()
-        require('onedark').setup{
-          -- dark, darker, warm, warmer
-          style = 'warm'
-        }
-        require('onedark').load()
+        require('plugins.onedark')
       end
     }
 
