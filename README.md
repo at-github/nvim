@@ -81,10 +81,20 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
               - setting path of the bin eslint, nothing again
               - launching eslint, i see error `Module.createRequire is not a function`
                 - seems to be a wrong node version
-        - [ ] php
+                  - Blocked, node didn’t work anymore on wsl ubuntu 22 on windows
+                  Wait for a fix https://github.com/microsoft/WSL/issues/8151 to work on windows
+                  and test on other OS
+        - [X] php phpcs
           > Error running phpcs: ENOENT: no such file or directory
             - Specified path for phpcs and it’s works, but phpcs need to be setted
-            [ ] try : https://github.com/mfussenegger/nvim-lint#customize-built-in-linter-parameters
+            - phpcs config is saved here: `~/.config/composer/vendor/squizlabs/php_codesniffer/CodeSniffer.conf`
+            - phpcs custom rules have to be write in a *.xml file so `phpcs --standard=my-standard.xml`
+            [X] try : https://github.com/mfussenegger/nvim-lint#customize-built-in-linter-parameters
+              - argument `--standard` almost work, ale not showing error just warning
+                - maybe because windows?
+                  - https://github.com/dense-analysis/ale/issues/3111
+                  - https://github.com/dense-analysis/ale/issues/2655
+                  - maybe because `\`, i tried to set `noshellslash` but no sure is correct or not enough
     - nvim-lspconfig
   - for:
     - [ ] sql

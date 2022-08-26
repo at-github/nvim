@@ -126,7 +126,7 @@ _G.packer_plugins = {
     url = "https://github.com/terrortylor/nvim-comment"
   },
   ["nvim-lint"] = {
-    config = { "\27LJ\2\2€\4\0\0\3\0\19\0\"6\0\0\0'\1\1\0B\0\2\0029\1\2\0009\1\3\1'\2\5\0=\2\4\0019\1\2\0009\1\6\1'\2\a\0=\2\4\0015\1\n\0005\2\t\0=\2\v\0015\2\f\0=\2\r\1=\1\b\0006\1\14\0009\1\4\1'\2\15\0B\1\2\0016\1\14\0009\1\4\1'\2\16\0B\1\2\0016\1\14\0009\1\4\1'\2\17\0B\1\2\0016\1\14\0009\1\4\1'\2\18\0B\1\2\1K\0\1\0:au BufWritePost *.php lua require('lint').try_lint() 6au BufEnter *.php lua require('lint').try_lint() 9au BufWritePost *.js lua require('lint').try_lint() 5au BufEnter *.js lua require('lint').try_lint() \bvim\bphp\1\2\0\0\nphpcs\15javascript\1\0\0\1\2\0\0\veslint\18linters_by_ft2/home/tarik/.config/composer/vendor/bin/phpcs\nphpcs\26/usr/local/bin/eslint\bcmd\veslint\flinters\tlint\frequire\0" },
+    config = { "\27LJ\2\n‚\5\0\0\5\0\22\0'6\0\0\0'\2\1\0B\0\2\0029\1\2\0009\1\3\1'\2\5\0=\2\4\0019\1\2\0009\1\6\1'\2\a\0=\2\4\0016\1\0\0'\3\b\0B\1\2\0025\2\n\0=\2\t\0015\2\r\0005\3\f\0=\3\14\0025\3\15\0=\3\16\2=\2\v\0006\2\17\0009\2\4\2'\4\18\0B\2\2\0016\2\17\0009\2\4\2'\4\19\0B\2\2\0016\2\17\0009\2\4\2'\4\20\0B\2\2\0016\2\17\0009\2\4\2'\4\21\0B\2\2\1K\0\1\0:au BufWritePost *.php lua require('lint').try_lint() 6au BufEnter *.php lua require('lint').try_lint() 9au BufWritePost *.js lua require('lint').try_lint() 5au BufEnter *.js lua require('lint').try_lint() \bvim\bphp\1\2\0\0\nphpcs\15javascript\1\0\0\1\2\0\0\veslint\18linters_by_ft\1\6\0\0\a-q6--standard=/home/tarik/dev/test_nvim/standard.xml\17--severity=5\18--report=json\6-\targs\23lint.linters.phpcs2/home/tarik/.config/composer/vendor/bin/phpcs\nphpcs\26/usr/local/bin/eslint\bcmd\veslint\flinters\tlint\frequire\0" },
     loaded = true,
     path = "/home/tarik/.local/share/nvim/site/pack/packer/start/nvim-lint",
     url = "https://github.com/mfussenegger/nvim-lint"
@@ -196,18 +196,18 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: indent-blankline.nvim
-time([[Config for indent-blankline.nvim]], true)
-try_loadstring("\27LJ\2\n8\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\29plugins.indent-blankline\frequire\0", "config", "indent-blankline.nvim")
-time([[Config for indent-blankline.nvim]], false)
--- Config for: barbar.nvim
-time([[Config for barbar.nvim]], true)
-try_loadstring("\27LJ\2\n.\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\19plugins.barbar\frequire\0", "config", "barbar.nvim")
-time([[Config for barbar.nvim]], false)
 -- Config for: feline.nvim
 time([[Config for feline.nvim]], true)
 try_loadstring("\27LJ\2\n.\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\19plugins.feline\frequire\0", "config", "feline.nvim")
 time([[Config for feline.nvim]], false)
+-- Config for: gitsigns.nvim
+time([[Config for gitsigns.nvim]], true)
+try_loadstring("\27LJ\2\nW\0\4\n\1\4\0\14\14\0\3\0X\4\1€4\3\0\0-\4\0\0=\4\0\0036\4\1\0009\4\2\0049\4\3\4\18\6\0\0\18\a\1\0\18\b\2\0\18\t\3\0B\4\5\1K\0\1\0\0À\bset\vkeymap\bvim\vbuffer#\0\0\2\1\1\0\4-\0\0\0009\0\0\0B\0\1\1K\0\1\0\0\0\14next_hunkg\1\0\3\1\a\0\0156\0\0\0009\0\1\0009\0\2\0\15\0\0\0X\1\2€'\0\3\0002\0\a€6\0\0\0009\0\4\0003\2\5\0B\0\2\1'\0\6\0002\0\0€L\0\2\0L\0\2\0\1À\r<Ignore>\0\rschedule\a]c\tdiff\awo\bvim#\0\0\2\1\1\0\4-\0\0\0009\0\0\0B\0\1\1K\0\1\0\0\0\14prev_hunkg\1\0\3\1\a\0\0156\0\0\0009\0\1\0009\0\2\0\15\0\0\0X\1\2€'\0\3\0002\0\a€6\0\0\0009\0\4\0003\2\5\0B\0\2\1'\0\6\0002\0\0€L\0\2\0L\0\2\0\1À\r<Ignore>\0\rschedule\a[c\tdiff\awo\bvim1\0\0\3\1\2\0\5-\0\0\0009\0\0\0005\2\1\0B\0\2\1K\0\1\0\1À\1\0\1\tfull\2\15blame_lineà\3\1\1\t\0\27\00056\1\0\0009\1\1\0019\1\2\0013\2\3\0\18\3\2\0'\5\4\0'\6\5\0003\a\6\0005\b\a\0B\3\5\1\18\3\2\0'\5\4\0'\6\b\0003\a\t\0005\b\n\0B\3\5\1\18\3\2\0005\5\v\0'\6\f\0'\a\r\0B\3\4\1\18\3\2\0005\5\14\0'\6\15\0'\a\16\0B\3\4\1\18\3\2\0'\5\4\0'\6\17\0009\a\18\1B\3\4\1\18\3\2\0'\5\4\0'\6\19\0009\a\20\1B\3\4\1\18\3\2\0'\5\4\0'\6\21\0003\a\22\0B\3\4\1\18\3\2\0'\5\4\0'\6\23\0009\a\24\1B\3\4\1\18\3\2\0'\5\4\0'\6\25\0009\a\26\1B\3\4\0012\0\0€K\0\1\0\rdiffthis\15<leader>hd\30toggle_current_line_blame\15<leader>tb\0\15<leader>hb\17preview_hunk\15<leader>hp\20undo_stage_hunk\15<leader>hu\29:Gitsigns reset_hunk<CR>\15<leader>hr\1\3\0\0\6n\6v\29:Gitsigns stage_hunk<CR>\15<leader>hs\1\3\0\0\6n\6v\1\0\1\texpr\2\0\a[c\1\0\1\texpr\2\0\a]c\6n\0\rgitsigns\vloaded\fpackageP\1\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0003\3\3\0=\3\5\2B\0\2\1K\0\1\0\14on_attach\1\0\0\0\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
+time([[Config for gitsigns.nvim]], false)
+-- Config for: nvim-comment
+time([[Config for nvim-comment]], true)
+try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17nvim_comment\frequire\0", "config", "nvim-comment")
+time([[Config for nvim-comment]], false)
 -- Config for: nvim-treesitter
 time([[Config for nvim-treesitter]], true)
 try_loadstring("\27LJ\2\n2\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\23plugins.treesitter\frequire\0", "config", "nvim-treesitter")
@@ -216,39 +216,31 @@ time([[Config for nvim-treesitter]], false)
 time([[Config for nvim-surround]], true)
 try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\18nvim-surround\frequire\0", "config", "nvim-surround")
 time([[Config for nvim-surround]], false)
--- Config for: nvim-comment
-time([[Config for nvim-comment]], true)
-try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17nvim_comment\frequire\0", "config", "nvim-comment")
-time([[Config for nvim-comment]], false)
--- Config for: gitsigns.nvim
-time([[Config for gitsigns.nvim]], true)
-try_loadstring("\27LJ\2\nW\0\4\n\1\4\0\14\14\0\3\0X\4\1€4\3\0\0-\4\0\0=\4\0\0036\4\1\0009\4\2\0049\4\3\4\18\6\0\0\18\a\1\0\18\b\2\0\18\t\3\0B\4\5\1K\0\1\0\0À\bset\vkeymap\bvim\vbuffer#\0\0\2\1\1\0\4-\0\0\0009\0\0\0B\0\1\1K\0\1\0\0\0\14next_hunkg\1\0\3\1\a\0\0156\0\0\0009\0\1\0009\0\2\0\15\0\0\0X\1\2€'\0\3\0002\0\a€6\0\0\0009\0\4\0003\2\5\0B\0\2\1'\0\6\0002\0\0€L\0\2\0L\0\2\0\1À\r<Ignore>\0\rschedule\a]c\tdiff\awo\bvim#\0\0\2\1\1\0\4-\0\0\0009\0\0\0B\0\1\1K\0\1\0\0\0\14prev_hunkg\1\0\3\1\a\0\0156\0\0\0009\0\1\0009\0\2\0\15\0\0\0X\1\2€'\0\3\0002\0\a€6\0\0\0009\0\4\0003\2\5\0B\0\2\1'\0\6\0002\0\0€L\0\2\0L\0\2\0\1À\r<Ignore>\0\rschedule\a[c\tdiff\awo\bvim1\0\0\3\1\2\0\5-\0\0\0009\0\0\0005\2\1\0B\0\2\1K\0\1\0\1À\1\0\1\tfull\2\15blame_lineà\3\1\1\t\0\27\00056\1\0\0009\1\1\0019\1\2\0013\2\3\0\18\3\2\0'\5\4\0'\6\5\0003\a\6\0005\b\a\0B\3\5\1\18\3\2\0'\5\4\0'\6\b\0003\a\t\0005\b\n\0B\3\5\1\18\3\2\0005\5\v\0'\6\f\0'\a\r\0B\3\4\1\18\3\2\0005\5\14\0'\6\15\0'\a\16\0B\3\4\1\18\3\2\0'\5\4\0'\6\17\0009\a\18\1B\3\4\1\18\3\2\0'\5\4\0'\6\19\0009\a\20\1B\3\4\1\18\3\2\0'\5\4\0'\6\21\0003\a\22\0B\3\4\1\18\3\2\0'\5\4\0'\6\23\0009\a\24\1B\3\4\1\18\3\2\0'\5\4\0'\6\25\0009\a\26\1B\3\4\0012\0\0€K\0\1\0\rdiffthis\15<leader>hd\30toggle_current_line_blame\15<leader>tb\0\15<leader>hb\17preview_hunk\15<leader>hp\20undo_stage_hunk\15<leader>hu\29:Gitsigns reset_hunk<CR>\15<leader>hr\1\3\0\0\6n\6v\29:Gitsigns stage_hunk<CR>\15<leader>hs\1\3\0\0\6n\6v\1\0\1\texpr\2\0\a[c\1\0\1\texpr\2\0\a]c\6n\0\rgitsigns\vloaded\fpackageP\1\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0003\3\3\0=\3\5\2B\0\2\1K\0\1\0\14on_attach\1\0\0\0\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
-time([[Config for gitsigns.nvim]], false)
+-- Config for: barbar.nvim
+time([[Config for barbar.nvim]], true)
+try_loadstring("\27LJ\2\n.\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\19plugins.barbar\frequire\0", "config", "barbar.nvim")
+time([[Config for barbar.nvim]], false)
+-- Config for: indent-blankline.nvim
+time([[Config for indent-blankline.nvim]], true)
+try_loadstring("\27LJ\2\n8\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\29plugins.indent-blankline\frequire\0", "config", "indent-blankline.nvim")
+time([[Config for indent-blankline.nvim]], false)
 -- Config for: nvim-lint
 time([[Config for nvim-lint]], true)
-try_loadstring("\27LJ\2\2€\4\0\0\3\0\19\0\"6\0\0\0'\1\1\0B\0\2\0029\1\2\0009\1\3\1'\2\5\0=\2\4\0019\1\2\0009\1\6\1'\2\a\0=\2\4\0015\1\n\0005\2\t\0=\2\v\0015\2\f\0=\2\r\1=\1\b\0006\1\14\0009\1\4\1'\2\15\0B\1\2\0016\1\14\0009\1\4\1'\2\16\0B\1\2\0016\1\14\0009\1\4\1'\2\17\0B\1\2\0016\1\14\0009\1\4\1'\2\18\0B\1\2\1K\0\1\0:au BufWritePost *.php lua require('lint').try_lint() 6au BufEnter *.php lua require('lint').try_lint() 9au BufWritePost *.js lua require('lint').try_lint() 5au BufEnter *.js lua require('lint').try_lint() \bvim\bphp\1\2\0\0\nphpcs\15javascript\1\0\0\1\2\0\0\veslint\18linters_by_ft2/home/tarik/.config/composer/vendor/bin/phpcs\nphpcs\26/usr/local/bin/eslint\bcmd\veslint\flinters\tlint\frequire\0", "config", "nvim-lint")
+try_loadstring("\27LJ\2\n‚\5\0\0\5\0\22\0'6\0\0\0'\2\1\0B\0\2\0029\1\2\0009\1\3\1'\2\5\0=\2\4\0019\1\2\0009\1\6\1'\2\a\0=\2\4\0016\1\0\0'\3\b\0B\1\2\0025\2\n\0=\2\t\0015\2\r\0005\3\f\0=\3\14\0025\3\15\0=\3\16\2=\2\v\0006\2\17\0009\2\4\2'\4\18\0B\2\2\0016\2\17\0009\2\4\2'\4\19\0B\2\2\0016\2\17\0009\2\4\2'\4\20\0B\2\2\0016\2\17\0009\2\4\2'\4\21\0B\2\2\1K\0\1\0:au BufWritePost *.php lua require('lint').try_lint() 6au BufEnter *.php lua require('lint').try_lint() 9au BufWritePost *.js lua require('lint').try_lint() 5au BufEnter *.js lua require('lint').try_lint() \bvim\bphp\1\2\0\0\nphpcs\15javascript\1\0\0\1\2\0\0\veslint\18linters_by_ft\1\6\0\0\a-q6--standard=/home/tarik/dev/test_nvim/standard.xml\17--severity=5\18--report=json\6-\targs\23lint.linters.phpcs2/home/tarik/.config/composer/vendor/bin/phpcs\nphpcs\26/usr/local/bin/eslint\bcmd\veslint\flinters\tlint\frequire\0", "config", "nvim-lint")
 time([[Config for nvim-lint]], false)
--- Config for: feline.nvim
-time([[Config for feline.nvim]], true)
-try_loadstring("\27LJ\2\2„\2\0\0\4\0\6\0\t5\0\0\0006\1\1\0'\2\2\0B\1\2\0029\2\3\0015\3\4\0=\0\5\3B\2\2\1K\0\1\0\ntheme\1\0\0\nsetup\vfeline\frequire\1\0\r\vviolet\f#b16286\nblack\f#1B1B1B\fskyblue\f#458588\fmagenta\f#fb4934\ngreen\f#689d6a\14oceanblue\f#1d2021\afg\f#928374\abg\f#1F2223\vorange\f#fabd2f\tcyan\f#83a597\vyellow\f#d79921\bred\f#cc241d\nwhite\f#ebdbb2\0", "config", "feline.nvim")
-time([[Config for feline.nvim]], false)
 -- Config for: onedark.nvim
 time([[Config for onedark.nvim]], true)
-try_loadstring("\27LJ\2\2`\0\0\2\0\5\0\f6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0B\0\2\0016\0\0\0'\1\1\0B\0\2\0029\0\4\0B\0\1\1K\0\1\0\tload\1\0\1\nstyle\twarm\nsetup\fonedark\frequire\0", "config", "onedark.nvim")
+try_loadstring("\27LJ\2\n/\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\20plugins.onedark\frequire\0", "config", "onedark.nvim")
 time([[Config for onedark.nvim]], false)
 -- Config for: nvim-autopairs
 time([[Config for nvim-autopairs]], true)
 try_loadstring("\27LJ\2\n<\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
 time([[Config for nvim-autopairs]], false)
--- Config for: onedark.nvim
-time([[Config for onedark.nvim]], true)
-try_loadstring("\27LJ\2\n/\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\20plugins.onedark\frequire\0", "config", "onedark.nvim")
-time([[Config for onedark.nvim]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)
-pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file NvimTreeToggle lua require("packer.load")({'nvim-tree.lua'}, { cmd = "NvimTreeToggle", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
 pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file NvimTreeFindFile lua require("packer.load")({'nvim-tree.lua'}, { cmd = "NvimTreeFindFile", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
+pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file NvimTreeToggle lua require("packer.load")({'nvim-tree.lua'}, { cmd = "NvimTreeToggle", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
 time([[Defining lazy-load commands]], false)
 
 if should_profile then save_profiles() end

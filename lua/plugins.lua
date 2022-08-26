@@ -71,6 +71,14 @@ return require('packer').startup(function(use)
         lint.linters.eslint.cmd = "/usr/local/bin/eslint"
         lint.linters.phpcs.cmd = "/home/tarik/.config/composer/vendor/bin/phpcs"
 
+        local phpcs = require('lint.linters.phpcs')
+        phpcs.args = {
+          '-q',
+          '--standard=/home/tarik/dev/test_nvim/standard.xml',
+          '--severity=5',
+          '--report=json',
+          '-'
+        }
         lint.linters_by_ft = {
           javascript = {"eslint"},
           php = {'phpcs'}
