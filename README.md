@@ -46,6 +46,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
   - when line was deleted, or after add to stage
 - [ ] on fresh open file, jump line of the history
 - [ ] switch dark / light theme
+  - not sure how to do it with 'onedark theme', maybe change theme to one having light & dark version
 - [ ] smart indentation on paste from clipboard
   - https://github.com/neovim/neovim/issues/3566
   - `]p`
