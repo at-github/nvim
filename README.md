@@ -6,6 +6,7 @@ Neovim must be above 0.5 to work well with lua config
 ## Some resources
 - https://teukka.tech/luanvim.html
 - https://github.com/nanotee/nvim-lua-guide
+- https://medium.com/linux-with-michael/a-list-of-all-my-main-neovim-plugins-8ac4ae107e16
 
 ## Satisfying (trying) checkhealth
 To check run `:checkhealth` in neovim
