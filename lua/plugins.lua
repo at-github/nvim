@@ -31,7 +31,6 @@ return require('packer').startup(function(use)
       'nvim-treesitter/nvim-treesitter',
       config = function() require'plugins.treesitter' end
     }
-
     use {
       'kyazdani42/nvim-tree.lua',
       opt = true,
@@ -39,17 +38,7 @@ return require('packer').startup(function(use)
         'kyazdani42/nvim-web-devicons',
       },
       cmd = {'NvimTreeToggle', 'NvimTreeFindFile'},
-      config = function()
-        require('nvim-tree').setup {
-          -- TODO one day try again to put config another place
-          filters = {
-            dotfiles = false,
-            custom = {'.git'}
-          },
-          open_on_tab = true,
-          hijack_cursor = true
-        }
-      end
+      config = function() require'plugins.tree' end
     }
 
     use {

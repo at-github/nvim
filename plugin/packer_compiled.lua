@@ -123,7 +123,7 @@ _G.packer_plugins = {
   },
   ["nvim-tree.lua"] = {
     commands = { "NvimTreeToggle", "NvimTreeFindFile" },
-    config = { "\27LJ\2\2è\1\0\0\4\0\b\0\v6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\6\0005\2\3\0005\3\4\0=\3\5\2=\2\a\1B\0\2\1K\0\1\0\ffilters\1\0\2\16open_on_tab\2\18hijack_cursor\2\vcustom\1\2\0\0\t.git\1\0\1\rdotfiles\1\nsetup\14nvim-tree\frequire\0" },
+    config = { "\27LJ\2\2,\0\0\2\0\2\0\0046\0\0\0'\1\1\0B\0\2\1K\0\1\0\17plugins.tree\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
