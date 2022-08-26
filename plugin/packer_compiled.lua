@@ -93,7 +93,7 @@ _G.packer_plugins = {
     url = "https://github.com/junegunn/goyo.vim"
   },
   ["indent-blankline.nvim"] = {
-    config = { "\27LJ\2\2¹\1\0\0\2\0\4\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0B\0\2\1K\0\1\0\1\0\5\31show_current_context_start\2\28show_first_indent_level\1\25show_current_context\2\tchar\bâ”†#show_trailing_blankline_indent\1\nsetup\21indent_blankline\frequire\0" },
+    config = { "\27LJ\2\0028\0\0\2\0\2\0\0046\0\0\0'\1\1\0B\0\2\1K\0\1\0\29plugins.indent-blankline\frequire\0" },
     loaded = true,
     path = "/home/tarik/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
@@ -209,7 +209,7 @@ try_loadstring("\27LJ\2\2@\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B
 time([[Config for nvim-autopairs]], false)
 -- Config for: indent-blankline.nvim
 time([[Config for indent-blankline.nvim]], true)
-try_loadstring("\27LJ\2\2¹\1\0\0\2\0\4\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0B\0\2\1K\0\1\0\1\0\5\31show_current_context_start\2\28show_first_indent_level\1\25show_current_context\2\tchar\bâ”†#show_trailing_blankline_indent\1\nsetup\21indent_blankline\frequire\0", "config", "indent-blankline.nvim")
+try_loadstring("\27LJ\2\0028\0\0\2\0\2\0\0046\0\0\0'\1\1\0B\0\2\1K\0\1\0\29plugins.indent-blankline\frequire\0", "config", "indent-blankline.nvim")
 time([[Config for indent-blankline.nvim]], false)
 
 -- Command lazy-loads

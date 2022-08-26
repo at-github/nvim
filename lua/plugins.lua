@@ -40,25 +40,14 @@ return require('packer').startup(function(use)
       cmd = {'NvimTreeToggle', 'NvimTreeFindFile'},
       config = function() require'plugins.tree' end
     }
-
     use {
       'nvim-telescope/telescope.nvim', tag = '0.1.0',
       requires = {'nvim-lua/plenary.nvim'}
     }
-
     use {
       'lukas-reineke/indent-blankline.nvim',
-      config = function()
-        require("indent_blankline").setup {
-          char = '┆',
-          show_current_context = true, -- globally enable or not
-          show_current_context_start = true, -- signature (or just start object) context
-          show_trailing_blankline_indent = false,
-          show_first_indent_level= false,
-        }
-      end
+      config = function() require'plugins.indent-blankline' end
     }
-
     use {
       'kylechui/nvim-surround',
       tag = '*', -- Use for stability; omit to use `main` branch for the latest features
