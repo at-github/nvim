@@ -62,9 +62,12 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
     2. buffer
     3. clipboard never
 - [ ] snippets
-- [ ] linter
+- [ ] linter (branch `linter`)
   - candidates:
-    - ALE
+    - ALE (branch `linter-ale`)
+      - [X] Installed
+      - [ ] Can't run `setup`
+      - [ ] Can't find documentation with `packer`
     - nvim-lint
     - nvim-lspconfig
   - for:
