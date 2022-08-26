@@ -26,40 +26,10 @@ return require('packer').startup(function(use)
       branch = '0.5-compat',
       config = function() require'plugins.feline' end
     }
-
     use 'junegunn/goyo.vim'
-
     use {
       'nvim-treesitter/nvim-treesitter',
-      config = function()
-        require('nvim-treesitter.configs').setup {
-          -- A list of parser names, or 'all'
-          ensure_installed = {
-            'css',
-            'dockerfile',
-            'html',
-            'javascript',
-            'jsdoc',
-            'json',
-            'json5',
-            'lua',
-            'make',
-            'markdown',
-            'ninja',
-            'php',
-            'python',
-            'regex',
-            'ruby',
-            'scss',
-            'sql',
-            'tsx',
-            'typescript',
-            'yaml'
-          },
-          -- Automatically install missing parsers when entering buffer
-          auto_install = true,
-        }
-      end
+      config = function() require'plugins.treesitter' end
     }
 
     use {
