@@ -78,6 +78,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
     - [ ] shell
     - [ ] nginx
     - [ ] docker
+ - [ ] barbar use tab instead classic buffer
 
 ### Done
 - [X] pair
