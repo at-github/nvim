@@ -76,7 +76,7 @@ _G.packer_plugins = {
     url = "https://github.com/romgrk/barbar.nvim"
   },
   ["feline.nvim"] = {
-    config = { "\27LJ\2\2„\2\0\0\4\0\6\0\t5\0\0\0006\1\1\0'\2\2\0B\1\2\0029\2\3\0015\3\4\0=\0\5\3B\2\2\1K\0\1\0\ntheme\1\0\0\nsetup\vfeline\frequire\1\0\r\vviolet\f#b16286\nblack\f#1B1B1B\fskyblue\f#458588\fmagenta\f#fb4934\ngreen\f#689d6a\14oceanblue\f#1d2021\afg\f#928374\abg\f#1F2223\vorange\f#fabd2f\tcyan\f#83a597\vyellow\f#d79921\bred\f#cc241d\nwhite\f#ebdbb2\0" },
+    config = { "\27LJ\2\2.\0\0\2\0\2\0\0046\0\0\0'\1\1\0B\0\2\1K\0\1\0\19plugins.feline\frequire\0" },
     loaded = true,
     path = "/home/tarik/.local/share/nvim/site/pack/packer/start/feline.nvim",
     url = "https://github.com/feline-nvim/feline.nvim"
@@ -201,7 +201,7 @@ try_loadstring("\27LJ\2\2/\0\0\2\0\2\0\0046\0\0\0'\1\1\0B\0\2\1K\0\1\0\20plugins
 time([[Config for onedark.nvim]], false)
 -- Config for: feline.nvim
 time([[Config for feline.nvim]], true)
-try_loadstring("\27LJ\2\2„\2\0\0\4\0\6\0\t5\0\0\0006\1\1\0'\2\2\0B\1\2\0029\2\3\0015\3\4\0=\0\5\3B\2\2\1K\0\1\0\ntheme\1\0\0\nsetup\vfeline\frequire\1\0\r\vviolet\f#b16286\nblack\f#1B1B1B\fskyblue\f#458588\fmagenta\f#fb4934\ngreen\f#689d6a\14oceanblue\f#1d2021\afg\f#928374\abg\f#1F2223\vorange\f#fabd2f\tcyan\f#83a597\vyellow\f#d79921\bred\f#cc241d\nwhite\f#ebdbb2\0", "config", "feline.nvim")
+try_loadstring("\27LJ\2\2.\0\0\2\0\2\0\0046\0\0\0'\1\1\0B\0\2\1K\0\1\0\19plugins.feline\frequire\0", "config", "feline.nvim")
 time([[Config for feline.nvim]], false)
 -- Config for: nvim-autopairs
 time([[Config for nvim-autopairs]], true)
