@@ -42,11 +42,13 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 - [ ] spell check, FR & EN
 - [ ] max line length highlight
 - [ ] nice & robust setting for tags
-- [ ] smart indentation on paste from clipboard
 - [ ] keep column width for gitsigns
   - when line was deleted, or after add to stage
 - [ ] on fresh open file, jump line of the history
 - [ ] switch dark / light theme
+- [ ] smart indentation on paste from clipboard
+  - https://github.com/neovim/neovim/issues/3566
+  - `]p`
 
 ### With plugin
 - [ ] succed to put plugin config in a separate file
