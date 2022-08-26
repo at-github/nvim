@@ -67,8 +67,24 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
     - ALE (branch `linter-ale`)
       - [X] Installed
       - [ ] Can't run `setup`
+        - It’s not work like that
       - [ ] Can't find documentation with `packer`
-    - nvim-lint
+    - nvim-lint (branch `linter-nvim-lint`)
+      - [X] Installed
+      - [ ] Lint ok (list below)
+        - [ ] markdown
+          > Error detected while processing BufWritePost Autocommands for "*":
+          > Error running vale: ENOENT: no such file or directory
+        - [ ] js
+          - nothing
+            - after some change in config, error appear, no such file…
+              - setting path of the bin eslint, nothing again
+              - launching eslint, i see error `Module.createRequire is not a function`
+                - seems to be a wrong node version
+        - [ ] php
+          > Error running phpcs: ENOENT: no such file or directory
+            - Specified path for phpcs and it’s works, but phpcs need to be setted
+            [ ] try : https://github.com/mfussenegger/nvim-lint#customize-built-in-linter-parameters
     - nvim-lspconfig
   - for:
     - [ ] sql

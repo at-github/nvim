@@ -63,6 +63,45 @@ return require('packer').startup(function(use)
     }
     use 'tjdevries/overlength.vim'
     use {
+      'mfussenegger/nvim-lint',
+      requires = {'eslint/eslint', 'squizlabs/PHP_CodeSniffer'},
+      config = function()
+        local lint = require "lint"
+
+        lint.linters.eslint.cmd = "/usr/local/bin/eslint"
+        lint.linters.phpcs.cmd = "/home/tarik/.config/composer/vendor/bin/phpcs"
+
+        lint.linters_by_ft = {
+          javascript = {"eslint"},
+          php = {'phpcs'}
+        }
+        -- require('lint').linters_by_ft = {
+        --   markdown = {'vale'},
+        --   javascript = {'eslint'},
+        --   php = {'phpcs'}
+        -- }
+
+        -- js no output
+        vim.cmd([[au BufEnter *.js lua require('lint').try_lint() ]])
+        vim.cmd([[au BufWritePost *.js lua require('lint').try_lint() ]])
+
+        -- php error
+        -- Error detected while processing BufEnter Autocommands for "*.php":
+        -- Error running phpcs: ENOENT: no such file or directory
+        -- works but need to be configured
+        vim.cmd([[au BufEnter *.php lua require('lint').try_lint() ]])
+        vim.cmd([[au BufWritePost *.php lua require('lint').try_lint() ]])
+
+        -- no output for js, error for markdown, error for php
+        -- vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+        --   callback = function()
+        --     require("lint").try_lint()
+        --   end,
+        -- })
+      end
+    }
+
+    use {
       'lewis6991/gitsigns.nvim',
       config = function()
         require('gitsigns').setup {
