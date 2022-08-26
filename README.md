@@ -44,7 +44,8 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 - [ ] smart indentation on paste from clipboard
 - [ ] keep column width for gitsigns
   - when line was deleted, or after add to stage
-- [ ] On open jump line of the history
+- [ ] on fresh open file, jump line of the history
+- [ ] switch dark / light theme
 
 ### With plugin
 - [ ] succed to put plugin config in a separate file
