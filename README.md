@@ -50,9 +50,6 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
   - `]p`
 
 ### With plugin
-- [ ] barbar
-  - [ ] use tab instead classic buffer
-  - [ ] visual order cycling
 - [ ] a nice completion please
   - No easy response, i want nice completion mainly for javascript & php.
   Php often not really supported by vim & neovim community
@@ -83,6 +80,11 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
     - [ ] docker
 
 ### Done
+- [X] barbar
+  - [X] use tab instead classic buffer
+  - [X] visual order cycling
+  Using only buffer & no vim tab make it ok,
+  but have to quit exlicitly the last buffer
 - [X] switch dark / light theme
 - [X] succed to put plugin config in a separate file
 - [X] pair
