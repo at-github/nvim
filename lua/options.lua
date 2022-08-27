@@ -32,3 +32,9 @@ vim.cmd([[
 -- Mapping
 vim.api.nvim_set_keymap('n', '<F5>', ':e!<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<Leader>e', ':NvimTreeToggle<CR>', { noremap = true })
+
+function toggleThemeLight()
+  vim.o.background = vim.o.background == 'dark' and 'light' or 'dark'
+end
+
+vim.api.nvim_set_keymap('n', '<Leader>t', ':lua toggleThemeLight()<CR>', { noremap = true })
