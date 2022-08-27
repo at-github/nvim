@@ -42,7 +42,6 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 - [ ] spell check, FR & EN
 - [ ] max line length highlight
 - [ ] nice & robust setting for tags
-- [ ] keep column width for gitsigns
   - when line was deleted, or after add to stage
 - [ ] on fresh open file, jump line of the history
 - [ ] smart indentation on paste from clipboard
@@ -80,6 +79,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
     - [ ] docker
 
 ### Done
+- [X] keep column width for gitsigns
 - [X] barbar
   - [X] use tab instead classic buffer
   - [X] visual order cycling

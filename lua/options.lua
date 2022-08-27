@@ -9,6 +9,7 @@ vim.o.backspace = 'indent,eol,start' -- backspace works on every char in insert 
 vim.o.synmaxcol = 300 -- stop syntax highlight after x lines for performance
 vim.o.foldmethod = 'syntax' -- use language syntax to generate folds
 vim.o.showbreak = '↪' -- character to show when line is broken
+vim.o.signcolumn = 'yes'
 vim.opt.termguicolors = true
 
 -- Sidebar
