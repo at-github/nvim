@@ -1,4 +1,4 @@
--- Compile each time this file is edited
+-- Compile each time this file is edited & source it !
 vim.cmd([[
   augroup packer_user_config
     autocmd!
@@ -51,23 +51,16 @@ return require('packer').startup(function(use)
     use {
       'kylechui/nvim-surround',
       tag = '*', -- Use for stability; omit to use `main` branch for the latest features
-      config = function()
-        require('nvim-surround').setup()
-      end
+      config = function() require'nvim-surround'.setup() end
     }
-
     use {
       'terrortylor/nvim-comment',
-      config = function()
-        require('nvim_comment').setup()
-      end
+      config = function() require'nvim_comment'.setup() end
     }
-
     use {
       'windwp/nvim-autopairs',
-      config = function() require('nvim-autopairs').setup {} end
+      config = function() require'nvim-autopairs'.setup() end
     }
-
     use {
       'lewis6991/gitsigns.nvim',
       config = function()
