@@ -68,14 +68,18 @@ return require('packer').startup(function(use)
       config = function()
         local lint = require "lint"
 
-        lint.linters.eslint.cmd = "/usr/local/bin/eslint"
+        lint.linters.eslint.cmd = "/usr/lib/node_modules/eslint/bin/eslint.js"
         lint.linters.phpcs.cmd = "/home/tarik/.config/composer/vendor/bin/phpcs"
+
+        local eslint = require('lint.linters.eslint')
+        eslint.args = {
+          '-c=/home/tarik/.config/nvim/eslint.json',
+        }
 
         local phpcs = require('lint.linters.phpcs')
         phpcs.args = {
           '-q',
-          '--standard=/home/tarik/dev/test_nvim/standard.xml',
-          '--severity=5',
+          '--standard=/home/tarik/.config/nvim/standard.xml',
           '--report=json',
           '-'
         }

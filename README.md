@@ -33,14 +33,19 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 - `pip`
 - `pynvim`
 - `npm`
-- `npm neovim`
+- `npm`
+  - `neovim`
+  - `eslint`
 - `nerd font`
   - https://www.nerdfonts.com/
+- `composer`
+  - `phpcs`
 
 <details>
  <summary>What i want</summary>
 
 ### Maybe without plug-in
+- [ ] mouse to click & scroll
 - [ ] find lua version of a vim option
 - [ ] spell check, FR & EN
 - [ ] nice & robust setting for tags
@@ -75,7 +80,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
         - [ ] markdown
           > Error detected while processing BufWritePost Autocommands for "*":
           > Error running vale: ENOENT: no such file or directory
-        - [ ] js
+        - [X] js
           - nothing
             - after some change in config, error appear, no such file…
               - setting path of the bin eslint, nothing again
@@ -84,6 +89,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
                   - Blocked, node didn’t work anymore on wsl ubuntu 22 on windows
                   Wait for a fix https://github.com/microsoft/WSL/issues/8151 to work on windows
                   and test on other OS
+              - eslint ok with custom config
         - [X] php phpcs
           > Error running phpcs: ENOENT: no such file or directory
             - Specified path for phpcs and it’s works, but phpcs need to be setted
@@ -95,6 +101,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
                   - https://github.com/dense-analysis/ale/issues/3111
                   - https://github.com/dense-analysis/ale/issues/2655
                   - maybe because `\`, i tried to set `noshellslash` but no sure is correct or not enough
+                  not working on arch, no error neither warning
     - nvim-lspconfig
   - for:
     - [ ] sql
