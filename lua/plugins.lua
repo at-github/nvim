@@ -65,52 +65,7 @@ return require('packer').startup(function(use)
     use {
       'mfussenegger/nvim-lint',
       requires = {'eslint/eslint', 'squizlabs/PHP_CodeSniffer'},
-      config = function()
-        local lint = require "lint"
-
-        lint.linters.eslint.cmd = "/usr/lib/node_modules/eslint/bin/eslint.js"
-        lint.linters.phpcs.cmd = "/home/tarik/.config/composer/vendor/bin/phpcs"
-
-        local eslint = require('lint.linters.eslint')
-        eslint.args = {
-          '-c=/home/tarik/.config/nvim/eslint.json',
-        }
-
-        local phpcs = require('lint.linters.phpcs')
-        phpcs.args = {
-          '-q',
-          '--standard=/home/tarik/.config/nvim/standard.xml',
-          '--report=json',
-          '-'
-        }
-        lint.linters_by_ft = {
-          javascript = {"eslint"},
-          php = {'phpcs'}
-        }
-        -- require('lint').linters_by_ft = {
-        --   markdown = {'vale'},
-        --   javascript = {'eslint'},
-        --   php = {'phpcs'}
-        -- }
-
-        -- js no output
-        vim.cmd([[au BufEnter *.js lua require('lint').try_lint() ]])
-        vim.cmd([[au BufWritePost *.js lua require('lint').try_lint() ]])
-
-        -- php error
-        -- Error detected while processing BufEnter Autocommands for "*.php":
-        -- Error running phpcs: ENOENT: no such file or directory
-        -- works but need to be configured
-        vim.cmd([[au BufEnter *.php lua require('lint').try_lint() ]])
-        vim.cmd([[au BufWritePost *.php lua require('lint').try_lint() ]])
-
-        -- no output for js, error for markdown, error for php
-        -- vim.api.nvim_create_autocmd({ "BufWritePost" }, {
-        --   callback = function()
-        --     require("lint").try_lint()
-        --   end,
-        -- })
-      end
+      config = function() require'plugins.nvim-lint' end
     }
 
     use {
