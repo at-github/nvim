@@ -34,6 +34,8 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 - `pynvim`
 - `npm`
 - `npm neovim`
+- `nerd font`
+  - https://www.nerdfonts.com/
 
 <details>
  <summary>What i want</summary>
