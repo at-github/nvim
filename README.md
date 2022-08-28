@@ -67,46 +67,11 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
     2. buffer
     3. clipboard never
 - [ ] snippets
-- [ ] linter (branch `linter`)
-  - candidates:
-    - ALE (branch `linter-ale`)
-      - [X] Installed
-      - [ ] Can't run `setup`
-        - It’s not work like that
-      - [ ] Can't find documentation with `packer`
-    - nvim-lint (branch `linter-nvim-lint`)
-      - [X] Installed
-      - [ ] Lint ok (list below)
-        - [ ] markdown
-          > Error detected while processing BufWritePost Autocommands for "*":
-          > Error running vale: ENOENT: no such file or directory
-        - [X] js
-          - nothing
-            - after some change in config, error appear, no such file…
-              - setting path of the bin eslint, nothing again
-              - launching eslint, i see error `Module.createRequire is not a function`
-                - seems to be a wrong node version
-                  - Blocked, node didn’t work anymore on wsl ubuntu 22 on windows
-                  Wait for a fix https://github.com/microsoft/WSL/issues/8151 to work on windows
-                  and test on other OS
-              - eslint ok with custom config
-        - [X] php phpcs
-          > Error running phpcs: ENOENT: no such file or directory
-            - Specified path for phpcs and it’s works, but phpcs need to be setted
-            - phpcs config is saved here: `~/.config/composer/vendor/squizlabs/php_codesniffer/CodeSniffer.conf`
-            - phpcs custom rules have to be write in a *.xml file so `phpcs --standard=my-standard.xml`
-            [X] try : https://github.com/mfussenegger/nvim-lint#customize-built-in-linter-parameters
-              - argument `--standard` almost work, ale not showing error just warning
-                - maybe because windows?
-                  - https://github.com/dense-analysis/ale/issues/3111
-                  - https://github.com/dense-analysis/ale/issues/2655
-                  - maybe because `\`, i tried to set `noshellslash` but no sure is correct or not enough
-                  not working on arch, no error neither warning
-    - nvim-lspconfig
+- [X] linter (nvim-lint)
   - for:
     - [ ] sql
-    - [ ] php
-    - [ ] javascript
+    - [/] php
+    - [/] javascript
     - [ ] react
     - [ ] typescript
     - [ ] ruby
