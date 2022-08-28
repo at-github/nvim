@@ -1,14 +1,15 @@
 local lint = require 'lint'
+local linters = lint.linters
 
 -- JS
-lint.linters.eslint.cmd = '/usr/lib/node_modules/eslint/bin/eslint.js'
+linters.eslint.cmd = '/usr/lib/node_modules/eslint/bin/eslint.js'
 local eslint = require('lint.linters.eslint')
 eslint.args = {
   '-c=/home/tarik/.config/nvim/eslint.json',
 }
 
 -- PHP
-lint.linters.phpcs.cmd = '/home/tarik/.config/composer/vendor/bin/phpcs'
+linters.phpcs.cmd = '/home/tarik/.config/composer/vendor/bin/phpcs'
 local phpcs = require('lint.linters.phpcs')
 phpcs.args = {
   '-q',
