@@ -26,7 +26,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 > Regenerate compiled loader file
 > `:PackerCompile`
 
-## External dependancies
+## External dependencies
 - `ripgrep`
 - `fd-find`
 - `python3`
@@ -38,7 +38,8 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 <details>
  <summary>What i want</summary>
 
-### Maybe without plugin
+### Maybe without plug-in
+- [ ] find lua version of a vim option
 - [ ] spell check, FR & EN
 - [ ] max line length highlight
 - [ ] nice & robust setting for tags
@@ -83,16 +84,16 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 - [X] barbar
   - [X] use tab instead classic buffer
   - [X] visual order cycling
-  Using only buffer & no vim tab make it ok,
-  but have to quit exlicitly the last buffer
+  Using only buffer & no vim tab make it OK,
+  but have to quit explicitly the last buffer
 - [X] switch dark / light theme
-- [X] succed to put plugin config in a separate file
+- [X] succeed to put plug-in config in a separate file
 - [X] pair
 - [X] visual search
 - [X] Visual status bar
-- [X] markdown ? not easy for code blocks
-  - Finally no plugin for markdown, the visual out of the box suit to me.
-  Just add goyo, having a clear space when i'm not coding
+- [X] markdown ? Not easy for code blocks
+  - Finally no plug-in for markdown, the visual out of the box suit to me.
+  Just add goyo, having a clear space when I'm not coding
 - [X] ~~like ctrlp~~ telescope
 - [X] indent setting by language
 - [X] jump chunk to chunk

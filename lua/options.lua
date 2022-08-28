@@ -18,7 +18,7 @@ vim.o.numberwidth = 3 -- always reserve 3 spaces for line number
 vim.o.ignorecase = true -- ignore letter case when searching
 vim.o.smartcase = true -- case insentive unless capitals used in search
 
--- tabs
+-- Tabs
 vim.o.smartindent = true
 vim.o.tabstop = 2 -- 1 tab = 2 spaces
 vim.o.shiftwidth = 2 -- indentation rule
