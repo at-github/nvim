@@ -17,10 +17,16 @@ phpcs.args = {
   '-'
 }
 
+-- LUA
+lint.linters.luacheck.cmd = '/usr/local/bin/luacheck'
+local luacheck = require('lint.linters.luacheck')
+luacheck.args = {}
+
 -- All
 lint.linters_by_ft = {
   javascript = {'eslint'},
-  php = {'phpcs'}
+  php = {'phpcs'},
+  lua = {'luacheck'}
 }
 
 vim.cmd('autocmd BufEnter,BufWritePost,InsertLeave * lua require("lint").try_lint()')
