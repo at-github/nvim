@@ -61,6 +61,7 @@ return require('packer').startup(function(use)
       'windwp/nvim-autopairs',
       config = function() require'nvim-autopairs'.setup() end
     }
+    use 'tjdevries/overlength.vim'
     use {
       'lewis6991/gitsigns.nvim',
       config = function()
