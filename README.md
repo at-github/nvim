@@ -71,6 +71,12 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
   - for:
     - [ ] sql
     - [/] php
+      - `phpcs -e *.php` Explain a standard by showing the sniffs it includes
+      - `phpcs -e *.php` Explain a standard by showing the sniffs it includes
+      - `phpcs -i` Show a list of installed coding standards
+      - [ ] force type hint
+      - [ ] force type return
+      - [ ] force strict
     - [/] javascript
     - [ ] react
     - [ ] typescript
