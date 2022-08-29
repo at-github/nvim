@@ -33,7 +33,6 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 - `pip`
 - `pynvim`
 - `npm`
-- `npm`
   - `neovim`
   - `eslint`
 - `nerd font`
@@ -48,8 +47,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 - [ ] mouse to click & scroll
 - [ ] find lua version of a vim option
 - [ ] spell check, FR & EN
-- [ ] nice & robust setting for tags
-  - when line was deleted, or after add to stage
+- [ ] nice & robust setting for tagd
 - [ ] on fresh open file, jump line of the history
 - [ ] smart indentation on paste from clipboard
   - https://github.com/neovim/neovim/issues/3566
