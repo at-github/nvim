@@ -40,6 +40,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
   - https://www.nerdfonts.com/
 - `composer`
   - `phpcs`
+    - `composer global require "squizlabs/php_codesniffer=*"`  [source](https://github.com/squizlabs/PHP_CodeSniffer#composer)
 
 <details>
  <summary>What i want</summary>
