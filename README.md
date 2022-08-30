@@ -67,6 +67,8 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
     2. buffer
     3. clipboard never
 - [ ] snippets
+  - https://github.com/SirVer/ultisnips
+  - *just a library of snippets* https://github.com/honza/vim-snippets
 - [X] linter (nvim-lint)
   - for:
     - [ ] sql
