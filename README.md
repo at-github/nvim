@@ -46,7 +46,6 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  <summary>What i want</summary>
 
 ### Maybe without plug-in
-- [ ] mouse to click & scroll
 - [ ] find lua version of a vim option
 - [ ] spell check, FR & EN
 - [ ] nice & robust setting for tags
@@ -90,6 +89,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
     - [ ] docker
 
 ### Done
+- [X] mouse to click & scroll
 - [X] max line length highlight
 - [X] keep column width for gitsigns
 - [X] barbar

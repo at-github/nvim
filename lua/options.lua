@@ -3,6 +3,7 @@ vim.g.mapleader = ','
 -- basic settings
 vim.o.encoding = 'utf-8'
 vim.o.completeopt = 'menuone,noselect'
+vim.opt.mouse = 'a'
 
 -- Display
 vim.o.backspace = 'indent,eol,start' -- backspace works on every char in insert mode
