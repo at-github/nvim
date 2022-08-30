@@ -63,6 +63,15 @@ return require('packer').startup(function(use)
       'windwp/nvim-autopairs',
       config = function() require'nvim-autopairs'.setup() end
     }
+    use {
+      --[[
+        You have to install coc extension or configure language servers for LSP support.
+        Install extensions like:
+        :CocInstall coc-json coc-tsserver
+      ]]
+      'neoclide/coc.nvim',
+      branch = 'release',
+    }
     use 'tjdevries/overlength.vim'
     use {
       'mfussenegger/nvim-lint',

@@ -59,6 +59,9 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
   Php often not really supported by vim & neovim community
   - candidates:
     - coc
+      - > You have to install coc extension or configure language servers for LSP support.
+      > Install extensions like:
+      `:CocInstall coc-json coc-tsserver`
     - nvim-comp
   - Order suggestion:
     1. definition
