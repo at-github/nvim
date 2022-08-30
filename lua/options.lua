@@ -33,6 +33,7 @@ vim.o.expandtab = true -- expand tab to spaces
 vim.cmd([[
   augroup tab_for_python
     autocmd FileType python setlocal ts=4 sts=4 sw=4 expandtab
+    autocmd FileType php setlocal ts=4 sts=4 sw=4 expandtab
   augroup end
 ]])
 

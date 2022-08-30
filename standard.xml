@@ -33,7 +33,6 @@
     <exclude name="Squiz.Commenting.FunctionComment"/>
     <exclude name="Squiz.WhiteSpace.FunctionSpacing"/>
     <exclude name="Squiz.Commenting.ClosingDeclarationComment.Missing"/>
-    <exclude name="Generic.Formatting.MultipleStatementAlignment.NotSame"/>
     <exclude name="Squiz.WhiteSpace.FunctionClosingBraceSpace.SpacingBeforeClose"/>
     <exclude name="Squiz.Strings.DoubleQuoteUsage.ContainsVar"/><!-- Not see if the variable is it inthe multines string -->
     <exclude name="Squiz.Strings.ConcatenationSpacing.PaddingFound"/>
