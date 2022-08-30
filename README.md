@@ -48,7 +48,6 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 
 ### Maybe without plug-in
 - [ ] find lua version of a vim option
-- [ ] spell check, FR & EN
 - [ ] nice & robust setting for tags
 - [ ] smart indentation on paste from clipboard
   - https://github.com/neovim/neovim/issues/3566
@@ -89,6 +88,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
     - [ ] docker
 
 ### Done
+- [X] spell check, FR & EN
 - [X] on fresh open file, jump line of the history
 - [X] mouse to click & scroll
 - [X] max line length highlight

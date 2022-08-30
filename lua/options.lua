@@ -15,6 +15,8 @@ vim.opt.termguicolors = true
 vim.cmd([[
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 ]])
+vim.o.spelllang = 'en,fr'
+vim.o.spell = true
 
 -- Sidebar
 vim.o.number = true
