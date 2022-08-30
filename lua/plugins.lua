@@ -41,8 +41,27 @@ return require('packer').startup(function(use)
       config = function() require'plugins.tree' end
     }
     use {
-      'nvim-telescope/telescope.nvim', tag = '0.1.0',
-      requires = {'nvim-lua/plenary.nvim'}
+      'nvim-telescope/telescope.nvim',
+      tag = '0.1.0',
+      requires = {'nvim-lua/plenary.nvim'},
+      config = function()
+        local actions = require("telescope.actions")
+
+        require('telescope').setup {
+          defaults = {
+            mappings = {
+              i = {
+                ["<esc>"] = actions.close
+              }
+            },
+            -- Works but not based .gitignore it will be easier
+            file_ignore_patterns = {
+              'coverage',
+              'vendor',
+              'node_modules',
+            },
+        }
+      end
     }
     use {
       'lukas-reineke/indent-blankline.nvim',
