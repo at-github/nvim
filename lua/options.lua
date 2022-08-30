@@ -12,6 +12,9 @@ vim.o.foldmethod = 'syntax' -- use language syntax to generate folds
 vim.o.showbreak = '↪' -- character to show when line is broken
 vim.o.signcolumn = 'yes'
 vim.opt.termguicolors = true
+vim.cmd([[
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+]])
 
 -- Sidebar
 vim.o.number = true

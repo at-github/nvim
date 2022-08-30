@@ -50,7 +50,6 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 - [ ] find lua version of a vim option
 - [ ] spell check, FR & EN
 - [ ] nice & robust setting for tags
-- [ ] on fresh open file, jump line of the history
 - [ ] smart indentation on paste from clipboard
   - https://github.com/neovim/neovim/issues/3566
   - `]p`
@@ -90,6 +89,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
     - [ ] docker
 
 ### Done
+- [X] on fresh open file, jump line of the history
 - [X] mouse to click & scroll
 - [X] max line length highlight
 - [X] keep column width for gitsigns
