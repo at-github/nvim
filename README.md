@@ -54,19 +54,12 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
   - `]p`
 
 ### With plugin
-- [ ] a nice completion please
-  - No easy response, i want nice completion mainly for javascript & php.
-  Php often not really supported by vim & neovim community
-  - candidates:
-    - coc
-      - > You have to install coc extension or configure language servers for LSP support.
-      > Install extensions like:
-      `:CocInstall coc-json coc-tsserver`
-    - nvim-comp
-  - Order suggestion:
-    1. definition
+- [X] a nice completion please
+  - [ ] Order suggestion:
+    1. definition (with tags?)
     2. buffer
     3. clipboard never
+  - [ ] Documentation on hover
 - [ ] snippets
   - https://github.com/SirVer/ultisnips
   - *just a library of snippets* https://github.com/honza/vim-snippets
