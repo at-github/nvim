@@ -69,13 +69,16 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
   - *just a library of snippets* https://github.com/honza/vim-snippets
 - [X] linter (nvim-lint)
   - for:
-     - [/] php
+    - [ ] php
+      - `phpcs -e *.php` Explain a standard by showing the sniffs it includes
       - `phpcs -e *.php` Explain a standard by showing the sniffs it includes
       - `phpcs -i` Show a list of installed coding standards
       - [ ] force type hint
+        - try https://github.com/slevomat/coding-standard
       - [ ] force type return
       - [ ] force strict
-    - [/] javascript
+    - [ ] javascript
+      - simple quote
     - [ ] react
     - [ ] typescript
     - [ ] lua
