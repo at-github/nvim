@@ -71,6 +71,7 @@ return require('packer').startup(function(use)
       ]]
       'neoclide/coc.nvim',
       branch = 'release',
+      config = function() require'plugins.coc' end
     }
     use 'tjdevries/overlength.vim'
     use {

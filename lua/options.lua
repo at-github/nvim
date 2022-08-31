@@ -37,11 +37,6 @@ vim.cmd([[
   augroup end
 ]])
 
--- COC
-vim.cmd([[
-  autocmd ColorScheme * hi CocMenuSel ctermbg=237 guibg=#13354A
-]])
-
 -- Mapping
 vim.api.nvim_set_keymap('n', '<F5>', ':e!<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<Leader>e', ':NvimTreeToggle<CR>', { noremap = true })
