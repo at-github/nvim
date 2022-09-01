@@ -37,6 +37,14 @@ vim.cmd([[
   augroup end
 ]])
 
+-- COC
+vim.cmd([[
+  function! CheckBackspace() abort
+    let col = col('.') - 1
+    return !col || getline('.')[col - 1]  =~# '\s'
+  endfunction
+]])
+
 -- Mapping
 vim.api.nvim_set_keymap('n', '<F5>', ':e!<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<Leader>e', ':NvimTreeToggle<CR>', { noremap = true })

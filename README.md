@@ -81,6 +81,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
     - [ ] python
     - [ ] shell
     - [X] javascript
+      - [ ] Set icon in signs column for error & warn
     - [X] react
     - [X] typescript
 
