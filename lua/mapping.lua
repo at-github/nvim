@@ -28,6 +28,10 @@ vim.cmd([[
   inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 ]])
 
+vim.api.nvim_set_keymap('n', '<F5>', ':e!<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<Leader>e', ':NvimTreeToggle<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<Leader>t', ':lua toggleThemeLight()<CR>', { noremap = true })
+
 --[[ FIXME documentation on hover
 -- > Error on notification "doHover": hover provider not found for current buffer, your language server doesn't support it
 -- So install server php

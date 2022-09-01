@@ -37,6 +37,10 @@ vim.cmd([[
   augroup end
 ]])
 
+function toggleThemeLight()
+  vim.o.background = vim.o.background == 'dark' and 'light' or 'dark'
+end
+
 -- COC
 vim.cmd([[
   function! CheckBackspace() abort
@@ -44,13 +48,3 @@ vim.cmd([[
     return !col || getline('.')[col - 1]  =~# '\s'
   endfunction
 ]])
-
--- Mapping
-vim.api.nvim_set_keymap('n', '<F5>', ':e!<CR>', { noremap = true })
-vim.api.nvim_set_keymap('n', '<Leader>e', ':NvimTreeToggle<CR>', { noremap = true })
-
-function toggleThemeLight()
-  vim.o.background = vim.o.background == 'dark' and 'light' or 'dark'
-end
-
-vim.api.nvim_set_keymap('n', '<Leader>t', ':lua toggleThemeLight()<CR>', { noremap = true })
