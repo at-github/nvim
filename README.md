@@ -64,6 +64,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
   - https://github.com/SirVer/ultisnips
   - *just a library of snippets* https://github.com/honza/vim-snippets
 - [X] linter (nvim-lint)
+  - [ ] custom icons for error and warning
   - for:
     - [ ] php
       - `phpcs -e *.php` Explain a standard by showing the sniffs it includes
@@ -81,7 +82,6 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
     - [ ] python
     - [ ] shell
     - [X] javascript
-      - [ ] Set icon in signs column for error & warn
     - [X] react
     - [X] typescript
 
