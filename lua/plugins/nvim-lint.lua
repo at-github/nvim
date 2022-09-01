@@ -2,7 +2,7 @@ local lint = require 'lint'
 local linters = lint.linters
 
 -- JS
-linters.eslint.cmd = '/usr/lib/node_modules/eslint/bin/eslint.js'
+linters.eslint.cmd = '/usr/local/bin/eslint'
 local eslint = require('lint.linters.eslint')
 eslint.args = {
   '-c=/home/tarik/.config/nvim/eslint.json',
@@ -21,6 +21,8 @@ phpcs.args = {
 -- All
 lint.linters_by_ft = {
   javascript = {'eslint'},
+  typescript = {'eslint'},
+  typescriptreact = {'eslint'},
   php = {'phpcs'}
 }
 

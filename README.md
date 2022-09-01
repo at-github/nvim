@@ -73,10 +73,6 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
         - try https://github.com/slevomat/coding-standard
       - [ ] force type return
       - [ ] force strict
-    - [ ] javascript
-      - simple quote
-    - [ ] react
-    - [ ] typescript
     - [ ] lua
     - [ ] nginx
     - [ ] docker
@@ -84,6 +80,9 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
     - [ ] ruby
     - [ ] python
     - [ ] shell
+    - [X] javascript
+    - [X] react
+    - [X] typescript
 
 ### Done
 - [X] spell check, FR & EN
