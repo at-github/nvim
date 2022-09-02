@@ -52,6 +52,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 - [ ] smart indentation on paste from clipboard
   - https://github.com/neovim/neovim/issues/3566
   - `]p`
+- [ ] bad auto indentation
 
 ### With plugin
 - [X] a nice completion please
@@ -68,7 +69,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
   - for:
     - [ ] php
       - `phpcs -e *.php` Explain a standard by showing the sniffs it includes
-      - `phpcs -e *.php` Explain a standard by showing the sniffs it includes
+      - `phpcs -s *.php` Show sniff codes in all reports
       - `phpcs -i` Show a list of installed coding standards
       - [ ] force type hint
         - try https://github.com/slevomat/coding-standard
@@ -84,6 +85,10 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
     - [X] javascript
     - [X] react
     - [X] typescript
+  - [ ] barbar
+    - [ ] fix strange order
+  - [ ] nvim-lint
+    - [ ] disable auto folding
 
 ### Done
 - [X] spell check, FR & EN

@@ -10,6 +10,16 @@
     - force strict
     - to check https://github.com/slevomat/coding-standard
   -->
+  <rule ref="Generic">
+    <exclude name="Generic.Classes.OpeningBraceSameLine.BraceOnNewLine"/>
+    <exclude name="Generic.ControlStructures.InlineControlStructure.Discouraged"/>
+    <exclude name="Generic.Files.EndFileNoNewline.Found"/>
+    <exclude name="Generic.Files.LowercasedFilename.NotFound"/>
+    <exclude name="Generic.Functions.OpeningFunctionBraceKernighanRitchie.BraceOnNewLine"/>
+    <exclude name="Generic.PHP.ClosingPHPTag.NotFound"/>
+    <exclude name="Generic.PHP.UpperCaseConstant.Found"/>
+    <exclude name="Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed"/>
+  </rule>
 
   <rule ref="PSR2">
     <exclude name="PSR2.Namespaces.UseDeclaration"/> <!-- authorize group of namespace -->
@@ -20,24 +30,33 @@
   </rule>
 
   <rule ref="PEAR">
-    <exclude name="PEAR.Commenting.FileComment"/>
-    <exclude name="PEAR.WhiteSpace.ScopeIndent"/> <!-- ignore indent level -->
     <exclude name="PEAR.Commenting.ClassComment"/>
+    <exclude name="PEAR.Commenting.FileComment"/>
     <exclude name="PEAR.Commenting.FunctionComment"/>
     <exclude name="PEAR.NamingConventions.ValidFunctionName"/> <!-- ignore underscore for private method -->
+    <exclude name="PEAR.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+    <exclude name="PEAR.WhiteSpace.ScopeIndent"/> <!-- ignore indent level -->
   </rule>
 
   <rule ref="Squiz">
-    <exclude name="Squiz.Commenting.FileComment"/>
+    <exclude name="Squiz.Commenting.BlockComment.NoNewLine"/>
+    <exclude name="Squiz.Commenting.BlockComment.SingleLine"/>
     <exclude name="Squiz.Commenting.ClassComment"/>
-    <exclude name="Squiz.Commenting.FunctionComment"/>
     <exclude name="Squiz.Commenting.ClosingDeclarationComment.Missing"/>
-    <exclude name="Squiz.WhiteSpace.FunctionSpacing"/>
-    <exclude name="Squiz.WhiteSpace.FunctionClosingBraceSpace.SpacingBeforeClose"/>
-    <exclude name="Squiz.Strings.DoubleQuoteUsage.ContainsVar"/><!-- Not see if the variable is it inthe multines string -->
-    <exclude name="Squiz.Strings.ConcatenationSpacing.PaddingFound"/>
+    <exclude name="Squiz.Commenting.FileComment"/>
+    <exclude name="Squiz.Commenting.FunctionComment"/>
+    <exclude name="Squiz.Commenting.VariableComment.Missing"/>
+    <exclude name="Squiz.Files.FileExtension.ClassFound"/>
     <exclude name="Squiz.PHP.DisallowInlineIf.Found"/>
+    <exclude name="Squiz.Strings.ConcatenationSpacing.PaddingFound"/>
+    <exclude name="Squiz.Strings.DoubleQuoteUsage.ContainsVar"/><!-- Not see if the variable is it inthe multines string -->
+    <exclude name="Squiz.WhiteSpace.FunctionClosingBraceSpace.SpacingBeforeClose"/>
+    <exclude name="Squiz.WhiteSpace.FunctionSpacing"/>
+    <exclude name="Squiz.WhiteSpace.MemberVarSpacing.FirstIncorrect"/>
+    <exclude name="Squiz.WhiteSpace.MemberVarSpacing.Incorrect"/>
   </rule>
 
-  <rule ref="Zend"/>
+  <rule ref="Zend">
+    <exclude name="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+  </rule>
 </ruleset>
