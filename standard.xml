@@ -13,10 +13,12 @@
   <rule ref="Generic">
     <exclude name="Generic.Arrays.DisallowShortArraySyntax.Found"/>
     <exclude name="Generic.Classes.OpeningBraceSameLine.BraceOnNewLine"/>
+    <exclude name="Generic.CodeAnalysis.UselessOverridingMethod.Found"/>
     <exclude name="Generic.ControlStructures.InlineControlStructure.Discouraged"/>
     <exclude name="Generic.Files.EndFileNoNewline.Found"/>
     <exclude name="Generic.Files.LowercasedFilename.NotFound"/>
     <exclude name="Generic.Formatting.NoSpaceAfterCast.SpaceFound"/>
+    <exclude name="Generic.Formatting.SpaceBeforeCast.NoSpace"/>
     <exclude name="Generic.Functions.OpeningFunctionBraceKernighanRitchie.BraceOnNewLine"/>
     <exclude name="Generic.PHP.ClosingPHPTag.NotFound"/>
     <exclude name="Generic.PHP.UpperCaseConstant.Found"/>
@@ -35,6 +37,8 @@
     <exclude name="PEAR.Commenting.ClassComment"/>
     <exclude name="PEAR.Commenting.FileComment"/>
     <exclude name="PEAR.Commenting.FunctionComment"/>
+    <exclude name="PEAR.Functions.FunctionCallSignature.CloseBracketLine"/>
+    <exclude name="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket"/>
     <exclude name="PEAR.NamingConventions.ValidFunctionName"/> <!-- ignore underscore for private method -->
     <exclude name="PEAR.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
     <exclude name="PEAR.WhiteSpace.ScopeIndent"/> <!-- ignore indent level -->
@@ -50,6 +54,8 @@
     <exclude name="Squiz.Commenting.ClosingDeclarationComment.Missing"/>
     <exclude name="Squiz.Commenting.FileComment"/>
     <exclude name="Squiz.Commenting.FunctionComment"/>
+    <exclude name="Squiz.Commenting.InlineComment.SpacingAfter"/>
+    <exclude name="Squiz.Commenting.LongConditionClosingComment.Missing"/>
     <exclude name="Squiz.Commenting.VariableComment.Missing"/>
     <exclude name="Squiz.Files.FileExtension.ClassFound"/>
     <exclude name="Squiz.PHP.DisallowInlineIf.Found"/>
@@ -59,6 +65,7 @@
     <exclude name="Squiz.WhiteSpace.FunctionSpacing"/>
     <exclude name="Squiz.WhiteSpace.MemberVarSpacing.FirstIncorrect"/>
     <exclude name="Squiz.WhiteSpace.MemberVarSpacing.Incorrect"/>
+    <exclude name="Squiz.WhiteSpace.ObjectOperatorSpacing.Before"/>
   </rule>
 
   <rule ref="Zend">
