@@ -11,10 +11,12 @@
     - to check https://github.com/slevomat/coding-standard
   -->
   <rule ref="Generic">
+    <exclude name="Generic.Arrays.DisallowShortArraySyntax.Found"/>
     <exclude name="Generic.Classes.OpeningBraceSameLine.BraceOnNewLine"/>
     <exclude name="Generic.ControlStructures.InlineControlStructure.Discouraged"/>
     <exclude name="Generic.Files.EndFileNoNewline.Found"/>
     <exclude name="Generic.Files.LowercasedFilename.NotFound"/>
+    <exclude name="Generic.Formatting.NoSpaceAfterCast.SpaceFound"/>
     <exclude name="Generic.Functions.OpeningFunctionBraceKernighanRitchie.BraceOnNewLine"/>
     <exclude name="Generic.PHP.ClosingPHPTag.NotFound"/>
     <exclude name="Generic.PHP.UpperCaseConstant.Found"/>
@@ -39,6 +41,9 @@
   </rule>
 
   <rule ref="Squiz">
+    <exclude name="Squiz.Arrays.ArrayDeclaration.DoubleArrowNotAligned"/> <!-- Weird count -->
+    <exclude name="Squiz.Arrays.ArrayDeclaration.NoComma"/>
+    <exclude name="Squiz.Arrays.ArrayDeclaration.SpaceBeforeComma"/>
     <exclude name="Squiz.Commenting.BlockComment.NoNewLine"/>
     <exclude name="Squiz.Commenting.BlockComment.SingleLine"/>
     <exclude name="Squiz.Commenting.ClassComment"/>
