@@ -39,6 +39,7 @@
     <exclude name="PEAR.Commenting.FunctionComment"/>
     <exclude name="PEAR.Functions.FunctionCallSignature.CloseBracketLine"/>
     <exclude name="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket"/>
+    <exclude name="PEAR.Functions.FunctionDeclaration.NewlineBeforeOpenBrace"/>
     <exclude name="PEAR.NamingConventions.ValidFunctionName"/> <!-- ignore underscore for private method -->
     <exclude name="PEAR.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
     <exclude name="PEAR.WhiteSpace.ScopeIndent"/> <!-- ignore indent level -->
@@ -58,6 +59,7 @@
     <exclude name="Squiz.Commenting.LongConditionClosingComment.Missing"/>
     <exclude name="Squiz.Commenting.VariableComment.Missing"/>
     <exclude name="Squiz.Files.FileExtension.ClassFound"/>
+    <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.NewlineBeforeOpenBrace"/>
     <exclude name="Squiz.PHP.DisallowInlineIf.Found"/>
     <exclude name="Squiz.Strings.ConcatenationSpacing.PaddingFound"/>
     <exclude name="Squiz.Strings.DoubleQuoteUsage.ContainsVar"/><!-- Not see if the variable is it inthe multines string -->

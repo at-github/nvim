@@ -89,6 +89,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
     - [ ] fix strange order
   - [ ] nvim-lint
     - [ ] disable auto folding
+  - [ ] nice buffer when i commit with fugitive and test from git hook is launched
 
 ### Done
 - [X] spell check, FR & EN
