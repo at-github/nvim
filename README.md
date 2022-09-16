@@ -86,7 +86,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
     - [X] react
     - [X] typescript
   - [ ] barbar
-    - [ ] fix strange order
+    - [ ] uninstall it, find one work well with tab
   - [ ] nvim-lint
     - [ ] disable auto folding
   - [ ] nice buffer when i commit with fugitive and test from git hook is launched
