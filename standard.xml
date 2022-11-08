@@ -38,6 +38,8 @@
     <exclude name="PEAR.Commenting.ClassComment"/>
     <exclude name="PEAR.Commenting.FileComment"/>
     <exclude name="PEAR.Commenting.FunctionComment"/>
+    <exclude name="PEAR.ControlStructures.MultiLineCondition.SpacingAfterOpenBrace"/>
+    <exclude name="PEAR.ControlStructures.MultiLineCondition.StartWithBoolean"/>
     <exclude name="PEAR.Functions.FunctionCallSignature.CloseBracketLine"/>
     <exclude name="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket"/>
     <exclude name="PEAR.Functions.FunctionDeclaration.NewlineBeforeOpenBrace"/>
