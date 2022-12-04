@@ -8,7 +8,14 @@ vim.opt.mouse = 'a'
 -- Display
 vim.o.backspace = 'indent,eol,start' -- backspace works on every char in insert mode
 vim.o.synmaxcol = 300 -- stop syntax highlight after x lines for performance
-vim.o.foldmethod = 'syntax' -- use language syntax to generate folds
+-- There are six methods to select folds:
+-- 	manual		manually define folds
+-- 	indent		more indent means a higher fold level
+-- 	expr		specify an expression to define folds
+-- 	syntax		folds defined by syntax highlighting
+-- 	diff		folds for unchanged text
+-- 	marker		folds defined by markers in the text
+vim.o.foldmethod = 'manual' -- use language syntax to generate folds
 vim.o.showbreak = '↪' -- character to show when line is broken
 vim.o.signcolumn = 'yes'
 vim.opt.termguicolors = true
