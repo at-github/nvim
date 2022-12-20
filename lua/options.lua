@@ -1,13 +1,14 @@
+local opt = vim.opt
+
 vim.g.mapleader = ','
 
 -- basic settings
-vim.o.encoding = 'utf-8'
-vim.o.completeopt = 'menuone,noselect'
-vim.opt.mouse = 'a'
+opt.encoding = 'utf-8'
+opt.completeopt = 'menuone,noselect'
+opt.mouse = 'a'
 
 -- Display
-vim.o.backspace = 'indent,eol,start' -- backspace works on every char in insert mode
-vim.o.synmaxcol = 300 -- stop syntax highlight after x lines for performance
+opt.synmaxcol = 300 -- stop syntax highlight after x lines for performance
 -- There are six methods to select folds:
 -- 	manual		manually define folds
 -- 	indent		more indent means a higher fold level
@@ -15,27 +16,29 @@ vim.o.synmaxcol = 300 -- stop syntax highlight after x lines for performance
 -- 	syntax		folds defined by syntax highlighting
 -- 	diff		folds for unchanged text
 -- 	marker		folds defined by markers in the text
-vim.o.foldmethod = 'manual' -- use language syntax to generate folds
-vim.o.showbreak = '↪' -- character to show when line is broken
-vim.o.signcolumn = 'yes'
-vim.opt.termguicolors = true
+opt.foldmethod = 'manual' -- use language syntax to generate folds
+opt.showbreak = '↪' -- character to show when line is broken
+opt.signcolumn = 'yes'
+opt.termguicolors = true
 vim.cmd([[
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 ]])
-vim.o.spelllang = 'en,fr'
-vim.o.spell = true
+opt.spelllang = 'en,fr'
+opt.spell = true
 
 -- Sidebar
-vim.o.number = true
-vim.o.numberwidth = 3 -- always reserve 3 spaces for line number
-vim.o.ignorecase = true -- ignore letter case when searching
-vim.o.smartcase = true -- case insentive unless capitals used in search
+opt.number = true
+opt.numberwidth = 3 -- always reserve 3 spaces for line number
+-- Search
+opt.ignorecase = true -- ignore letter case when searching
+opt.smartcase = true -- case insentive unless capitals used in search
 
--- Tabs
-vim.o.smartindent = true
-vim.o.tabstop = 2 -- 1 tab = 2 spaces
-vim.o.shiftwidth = 2 -- indentation rule
-vim.o.expandtab = true -- expand tab to spaces
+-- Indentation
+opt.smartindent = true
+opt.tabstop = 2 -- 1 tab = 2 spaces
+opt.shiftwidth = 2 -- indentation rule
+opt.expandtab = true -- expand tab to spaces
+opt.autoindent = true
 
 vim.cmd([[
   augroup tab_for_python
@@ -44,11 +47,26 @@ vim.cmd([[
   augroup end
 ]])
 
+-- Backspace
+opt.backspace = 'indent,eol,start' -- backspace works on every char in insert mode
+opt.iskeyword:append('-')
+opt.iskeyword:append('$')
+
+-- cursor
+opt.cursorline = true
+
+-- Clipboard
+opt.clipboard:append('unnamedplus')
+
 function toggleThemeLight()
-  vim.o.background = vim.o.background == 'dark' and 'light' or 'dark'
+  opt.background = opt.background == 'dark' and 'light' or 'dark'
 end
 
--- COC
+-- Split
+opt.splitright = true
+opt.splitbelow = true
+
+-- COC TODO move it in plugin file
 vim.cmd([[
   function! CheckBackspace() abort
     let col = col('.') - 1
