@@ -16,21 +16,6 @@ map('n', '<leader>ft', ":Telescope help_tags  prompt_prefix=  <cr>",  norem
 map('n', '<leader>w', ":BufferDelete<cr>", noremap)
 map('n', '<leader>q', ":quit<cr>", noremap)
 
--- COC
--- Confirm selection with ctr space
-vim.cmd([[
-  inoremap <silent><expr> <c-space> coc#pum#visible() ? coc#pum#confirm() : "\<tab>"
-]])
-
--- Cycle suggestion with tab ↓ and s-tab ↑
-vim.cmd([[
-  inoremap <silent><expr> <TAB>
-    \ coc#pum#visible() ? coc#pum#next(1) :
-    \ CheckBackspace() ? "\<Tab>" :
-    \ coc#refresh()
-  inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
-]])
-
 vim.api.nvim_set_keymap('n', '<F5>', ':e!<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<Leader>e', ':NvimTreeToggle<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<Leader>t', ':lua toggleThemeLight()<CR>', { noremap = true })
