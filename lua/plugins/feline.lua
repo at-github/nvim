@@ -14,5 +14,4 @@ local gruvbox = {
   yellow = '#d79921',
 }
 
-local feline = require('feline')
-feline.setup({theme = gruvbox})
+require('feline').setup({theme = gruvbox})

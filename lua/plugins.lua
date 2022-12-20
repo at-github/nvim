@@ -31,6 +31,8 @@ return require('packer').startup(function(use)
 
   use 'EdenEast/nightfox.nvim' -- Themes
 
+  use 'kyazdani42/nvim-web-devicons'
+
   use {
     'navarasu/onedark.nvim', -- Themes
     config = function() require'plugins.onedark' end
@@ -147,6 +149,10 @@ return require('packer').startup(function(use)
       }
     end
   }
+
+  use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
+
+  use("inkarkat/vim-ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
 
   if packer_bootstrap then
     require("packer").sync()
