@@ -1,7 +1,5 @@
 local opt = vim.opt
 
-vim.g.mapleader = ','
-
 -- basic settings
 opt.encoding = 'utf-8'
 opt.completeopt = 'menuone,noselect'
