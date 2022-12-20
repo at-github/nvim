@@ -81,10 +81,9 @@ return require('packer').startup(function(use)
     config = function() require'nvim_comment'.setup() end
   }
 
-  use {
-    'windwp/nvim-autopairs',
-    config = function() require'nvim-autopairs'.setup() end
-  }
+  use('windwp/nvim-autopairs')
+
+  use('windwp/nvim-ts-autotag')
 
   -- autocompletion
   use{
