@@ -22,7 +22,8 @@ To check run `:checkhealth` in neovim
 
 ### List
 
-`PackerStatus`
+`PackerStatus` :
+
 - LuaSnip
 - PHP_CodeSniffer
 - cmp-buffer
@@ -38,6 +39,7 @@ To check run `:checkhealth` in neovim
 - lspsaga.nvim
 - mason-lspconfig.nvim
 - mason.nvim
+- mintabline.vim
 - nightfox.nvim
 - nvim-autopairs
 - nvim-cmp

@@ -409,6 +409,7 @@ return require('packer').startup(function(use)
   use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 
   use("inkarkat/vim-ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
+  use("sangdol/mintabline.vim")
 
   if packer_bootstrap then
     require("packer").sync()
