@@ -15,9 +15,50 @@ To check run `:checkhealth` in neovim
 - Check latest version of `pynvim` is installed (via pip)
 - Check npm neovim is installed, but still no enough
 
-## Plugin manager: Packer
+## Plugins
+### Plugin manager: Packer
 ### For the first use
 [source](https://github.com/wbthomason/packer.nvim#quickstart)
+
+### List
+
+`PackerStatus`
+- LuaSnip
+- PHP_CodeSniffer
+- cmp-buffer
+- cmp-nvim-lsp
+- cmp-path
+- cmp_luasnip
+- eslint
+- feline.nvim
+- gitsigns.nvim
+- goyo.vim
+- indent-blankline.nvim
+- lspkind.nvim
+- lspsaga.nvim
+- mason-lspconfig.nvim
+- mason.nvim
+- nightfox.nvim
+- nvim-autopairs
+- nvim-cmp
+- nvim-comment
+- nvim-lint
+- nvim-lspconfig
+- nvim-surround
+- nvim-tree.lua (not loaded)
+- nvim-treesitter
+- nvim-ts-autotag
+- nvim-web-devicons
+- onedark.nvim
+- overlength.vim
+- packer.nvim
+- plenary.nvim
+- telescope.nvim
+- typescript.nvim
+- vim-ReplaceWithRegister
+- vim-fugitive
+- vim-tmux-navigator
+- vim-visual-star-search
 
 > To get started, first clone this repository to somewhere on your packpath, e.g.:
 ```shell
