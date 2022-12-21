@@ -151,8 +151,13 @@ return require('packer').startup(function(use)
 
   use("hrsh7th/cmp-path") -- source for file system paths
 
-  -- snippets
-  use("L3MON4D3/LuaSnip") -- snippet engine
+  -- snippet engine
+  use{
+    "L3MON4D3/LuaSnip",
+    config = function()
+      require("luasnip.loaders.from_vscode").lazy_load({paths = "~/.config/nvim/my_snippets"})
+    end
+  }
 
   use("saadparwaiz1/cmp_luasnip") -- for autocompletion
 

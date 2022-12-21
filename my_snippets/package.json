@@ -1,0 +1,13 @@
+{
+	"name": "tariks-snippets",
+	"contributes": {
+		"snippets": [
+			{
+				"language": [
+          "javascript"
+				],
+				"path": "./snippets/javascript.json"
+			}
+		]
+	}
+}

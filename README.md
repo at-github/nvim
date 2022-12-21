@@ -25,6 +25,7 @@ To check run `:checkhealth` in neovim
 `PackerStatus` :
 
 - LuaSnip
+  - Some useful inspiration for snippets: https://github.com/rafamadriz/friendly-snippets
 - PHP_CodeSniffer
 - cmp-buffer
 - cmp-nvim-lsp
