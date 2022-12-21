@@ -1,29 +1,21 @@
 vim.g.mapleader = ','
 
 local map = vim.api.nvim_set_keymap
-noremap = {noremap = true}
+local noremap = {noremap = true}
 
 -- general
 map('n', 'x', '"_x', noremap)
 map('n', '<leader>+', '<C-a>', noremap)
 map('n', '<leader>-', '<C-x>', noremap)
 
+map('n', '<leader>w', ":q<cr>", noremap)
+map('n', '<leader>q', ":qa<cr>", noremap)
+
+map('n', '<F5>', ':e!<CR>', noremap)
+map('n', '<Leader>e', ':NvimTreeToggle<CR>', noremap)
+map('n', '<Leader>t', ':lua toggleThemeLight()<CR>', noremap)
+
 -- Telescope
 map('n', '<leader>ff', ":Telescope find_files prompt_prefix= 🔍  find_command=rg,--ignore,--hidden,--files <cr>", noremap)
 map('n', '<leader>fg', ":Telescope git_files  prompt_prefix=  <cr>", noremap)
 map('n', '<leader>ft', ":Telescope help_tags  prompt_prefix=  <cr>",  noremap)
-
-map('n', '<leader>w', ":BufferDelete<cr>", noremap)
-map('n', '<leader>q', ":quit<cr>", noremap)
-
-vim.api.nvim_set_keymap('n', '<F5>', ':e!<CR>', { noremap = true })
-vim.api.nvim_set_keymap('n', '<Leader>e', ':NvimTreeToggle<CR>', { noremap = true })
-vim.api.nvim_set_keymap('n', '<Leader>t', ':lua toggleThemeLight()<CR>', { noremap = true })
-
---[[ FIXME documentation on hover
--- > Error on notification "doHover": hover provider not found for current buffer, your language server doesn't support it
--- So install server php
-]]
-vim.cmd([[
-  nnoremap <silent> <leader>h :call CocActionAsync('doHover')<cr>
-]])
