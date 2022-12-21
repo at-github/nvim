@@ -9,6 +9,9 @@ require('nvim-treesitter.configs').setup {
   autotag = {enable = true},
   -- ensure these language parsers are installed
   ensure_installed = {
+    'git_rebase',
+    'gitattributes',
+    'gitcommit',
     'css',
     'dockerfile',
     'html',

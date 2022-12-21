@@ -22,7 +22,8 @@ To check run `:checkhealth` in neovim
 
 ### List
 
-`PackerStatus` :
+<details>
+ <summary>`PackerStatus` :</summary>
 
 - LuaSnip
   - Some useful inspiration for snippets: https://github.com/rafamadriz/friendly-snippets
@@ -50,6 +51,29 @@ To check run `:checkhealth` in neovim
 - nvim-surround
 - nvim-tree.lua (not loaded)
 - nvim-treesitter
+  - git_rebase
+  - gitattributes
+  - gitcommit
+  - css
+  - dockerfile
+  - html
+  - javascript
+  - jsdoc
+  - json
+  - json5
+  - lua
+  - make
+  - markdown
+  - ninja
+  - php
+  - python
+  - regex
+  - ruby
+  - scss
+  - sql
+  - tsx
+  - typescript
+  - yaml
 - nvim-ts-autotag
 - nvim-web-devicons
 - onedark.nvim
@@ -62,6 +86,7 @@ To check run `:checkhealth` in neovim
 - vim-fugitive
 - vim-tmux-navigator
 - vim-visual-star-search
+</details>
 
 > To get started, first clone this repository to somewhere on your packpath, e.g.:
 ```shell
