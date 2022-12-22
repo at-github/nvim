@@ -83,24 +83,7 @@ return require('packer').startup(function(use)
 
   use{
     'windwp/nvim-autopairs',
-    config = function()
-      local autopairs = require'nvim-autopairs'
-
-      -- configure autopairs
-      autopairs.setup({
-        check_ts = true, -- enable treesitter
-        ts_config = {
-          lua = {"string"}, -- don't add pairs in lua string treesitter nodes
-          javascript = {"template_string"}, -- don't add pairs in javscript template_string treesitter nodes
-        },
-      })
-
-      local cmp_autopairs = require'nvim-autopairs.completion.cmp'
-      local cmp = require'cmp'
-
-      -- make autopairs and completion work together
-      cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
-    end
+    config = function() require'plugins.nvim-autopairs' end
   }
 
   use('windwp/nvim-ts-autotag')
@@ -121,38 +104,17 @@ return require('packer').startup(function(use)
     end
   }
 
-  use("saadparwaiz1/cmp_luasnip") -- for autocompletion
+  use("saadparwaiz1/cmp_luasnip") -- snippet autocompletion
 
-    -- managing & installing lsp servers, linters & formatters
+  -- managing & installing lsp servers, linters & formatters
   use{
     "williamboman/mason.nvim",
-    config = function()
-      local mason = require'mason'
-      mason.setup()
-    end
+    config = function() require'mason'.setup() end
   } -- in charge of managing lsp servers, linters & formatters
 
   use{
     "williamboman/mason-lspconfig.nvim",
-    config = function()
-      local mason_lspconfig = require'mason-lspconfig'
-      mason_lspconfig.setup({
-        ensure_installed = {
-          'cssls',
-          'dockerls',
-          'eslint',
-          'html',
-          'jsonls',
-          'marksman',
-          'psalm',
-          'ruby_ls',
-          'sqlls',
-          'sumneko_lua',
-          'tailwindcss',
-          'tsserver',
-        }
-      })
-    end
+    config = function() require'plugins.mason-lspconfig' end
   } -- bridges gap b/w mason & lspconfig
 
     -- configuring lsp servers
