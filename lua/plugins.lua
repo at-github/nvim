@@ -128,23 +128,7 @@ return require('packer').startup(function(use)
   use{
     "glepnir/lspsaga.nvim",
     branch = "main",
-    config = function()
-      local saga = require'lspsaga'
-
-      saga.init_lsp_saga({
-        -- keybinds for navigation in lspsaga window
-        move_in_saga = { prev = "<C-k>", next = "<C-j>" },
-        -- use enter to open file with finder
-        finder_action_keys = {
-          open = "<CR>",
-        },
-        -- use enter to open file with definition preview
-        definition_action_keys = {
-          edit = "<CR>",
-        }
-      })
-
-    end
+    config = function() require'plugins.lspsaga-nvim' end
   } -- enhanced lsp uis
 
   use("jose-elias-alvarez/typescript.nvim") -- additional functionality for typescript server (e.g. rename file & update imports)
