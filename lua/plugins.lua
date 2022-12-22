@@ -48,7 +48,7 @@ return require('packer').startup(function(use)
     config = function() require'plugins.treesitter' end
   }
 
-  use {
+  use { -- need neovim > 0.8
     'kyazdani42/nvim-tree.lua',
     opt = true,
     requires = {
@@ -105,8 +105,7 @@ return require('packer').startup(function(use)
 
   use('windwp/nvim-ts-autotag')
 
-  -- autocompletion
-  use{
+  use{ -- autocompletion
     'hrsh7th/nvim-cmp',
     config = function()
       local cmp = require'cmp'
@@ -120,13 +119,9 @@ return require('packer').startup(function(use)
           end,
         },
 
-         mapping = cmp.mapping.preset.insert({
-           -- ["<C-b>"] = cmp.mapping.scroll_docs(-4), -- TODO find default map
-           -- ["<C-f>"] = cmp.mapping.scroll_docs(4), -- TODO find default map
-           -- ["<C-Space>"] = cmp.mapping.complete(), -- show completion suggestions
-           ["<C-e>"] = cmp.mapping.abort(), -- close completion window
-           ["<CR>"] = cmp.mapping.confirm({ select = false }),
-         }),
+        mapping = cmp.mapping.preset.insert({
+          ["<CR>"] = cmp.mapping.confirm({ select = false }),
+        }),
 
         -- sources for autocompletion
         sources = cmp.config.sources({
@@ -140,19 +135,18 @@ return require('packer').startup(function(use)
         formatting = {
           format = lspkind.cmp_format({
             maxwidth = 50,
-            ellipsis_char = "...",
+            ellipsis_char = "…",
           }),
         },
       }
     end
-  } -- completion plugin
+  }
 
   use("hrsh7th/cmp-buffer") -- source for text in buffer
 
   use("hrsh7th/cmp-path") -- source for file system paths
 
-  -- snippet engine
-  use{
+  use{ -- snippet engine
     "L3MON4D3/LuaSnip",
     config = function()
       require("luasnip.loaders.from_vscode").lazy_load({paths = "~/.config/nvim/my_snippets"})
