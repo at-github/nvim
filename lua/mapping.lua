@@ -13,7 +13,6 @@ map('n', '<leader>q', ":qa<cr>", noremap)
 
 map('n', '<F5>', ':e!<CR>', noremap)
 map('n', '<Leader>e', ':NvimTreeToggle<CR>', noremap)
-map('n', '<Leader>t', ':lua toggleThemeLight()<CR>', noremap)
 
 -- Telescope
 map('n', '<leader>ff', ":Telescope find_files prompt_prefix= 🔍  find_command=rg,--ignore,--hidden,--files <cr>", noremap)

@@ -4,6 +4,10 @@
 Neovim must be above **0.5** to work well with lua config,
 and some plugin need **0.7** version.
 
+## Commands
+
+- `<leader>t` to switch dark|light theme
+
 ## Some resources
 - https://teukka.tech/luanvim.html
 - https://github.com/nanotee/nvim-lua-guide

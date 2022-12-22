@@ -26,7 +26,7 @@ return require('packer').startup(function(use)
 
   use 'EdenEast/nightfox.nvim' -- Themes
 
-  use 'kyazdani42/nvim-web-devicons'
+  use 'kyazdani42/nvim-web-devicons' -- Icons
 
   use {
     'navarasu/onedark.nvim', -- Themes
