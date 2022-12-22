@@ -41,15 +41,16 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 
 - LuaSnip
   - Some useful inspiration for snippets: https://github.com/rafamadriz/friendly-snippets
+- goyo.vim
+- onedark.nvim
+- feline.nvim
 - PHP_CodeSniffer
 - cmp-buffer
 - cmp-nvim-lsp
 - cmp-path
 - cmp_luasnip
 - eslint
-- feline.nvim
 - gitsigns.nvim
-- goyo.vim
 - indent-blankline.nvim
 - lspkind.nvim
 - lspsaga.nvim
@@ -90,7 +91,6 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
   - yaml
 - nvim-ts-autotag
 - nvim-web-devicons
-- onedark.nvim
 - overlength.vim
 - packer.nvim
 - plenary.nvim

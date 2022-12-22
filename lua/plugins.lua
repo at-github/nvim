@@ -28,18 +28,18 @@ return require('packer').startup(function(use)
 
   use 'kyazdani42/nvim-web-devicons' -- Icons
 
-  use {
-    'navarasu/onedark.nvim', -- Themes
+  use { -- Themes
+    'navarasu/onedark.nvim',
     config = function() require'plugins.onedark' end
   }
 
-  use 'nelstrom/vim-visual-star-search'
-
-  use {
+  use { -- status line
     'feline-nvim/feline.nvim',
     branch = '0.5-compat',
     config = function() require'plugins.feline' end
   }
+
+  use 'nelstrom/vim-visual-star-search'
 
   use 'junegunn/goyo.vim'
 
