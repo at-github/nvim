@@ -24,8 +24,6 @@ return require('packer').startup(function(use)
 
   use 'tpope/vim-fugitive' -- Git commands
 
-  use 'EdenEast/nightfox.nvim' -- Themes
-
   use 'kyazdani42/nvim-web-devicons' -- Icons
 
   use { -- Themes
