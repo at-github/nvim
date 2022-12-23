@@ -7,6 +7,7 @@ local noremap = {noremap = true}
 map('n', '<leader>+', '<C-a>', noremap)
 map('n', '<leader>-', '<C-x>', noremap)
 
+map('n', '<leader>o', ":on<cr>", noremap)
 map('n', '<leader>w', ":q<cr>", noremap)
 map('n', '<leader>q', ":qa<cr>", noremap)
 

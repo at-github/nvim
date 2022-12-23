@@ -7,14 +7,17 @@ and some plugin need **0.7** version.
 ## Commands
 
 ### General
-- `<leader>+` Increase first number in line after the cursor
-- `<leader>-` Decrease first number in line after the cursor
-- `<leader>w` Close buffer
-- `<leader>q` Quit all
+
+- `<leader>+` increase first number in line after the cursor
+- `<leader>-` decrease first number in line after the cursor
+- `<leader>o` close other splits
+- `<leader>w` close buffer
+- `<leader>q` quit all
 - `<F5>` Refresh buffer
-- `<leader>e` Refresh buffer
+- `<leader>e` refresh buffer
 
 ### Visual
+
 - `<leader>t` to switch dark|light theme
 - `<leader>g` toggle goyo view mode
 
@@ -31,24 +34,58 @@ and some plugin need **0.7** version.
 - `<leader>hd` diff current file
 
 ### Telescope
+
 - `<leader>ff` find file
 - `<leader>fg` find file with git
 - `<leader>ft` find file with tag
 
+### Saga
+
+- `<C-k>` & `<C-j>` to move
+
+### Completion
+
+- `<CR>` to choose selected suggestion
+
+### Lspsaga
+
+- `gf` show definition
+- `gD` got to declaration
+- `gd` see definition
+- `gi` go to implementation
+- `<leader>ca` see available code actions
+- `<leader>rn` smart rename
+- `<leader>D` show diagnostics
+- `[d` go to next dianostic
+- `]d` go to previous dianostic
+- `K` show documentation
+- `<leader>s` show structure
+
+#### Typescript specific
+
+- `<leader>rf` rename file & update imports
+- `<leader>oi` organize imports
+- `<leader>ru` remove unused variables
+
 ## Some resources
+
 - https://teukka.tech/luanvim.html
 - https://github.com/nanotee/nvim-lua-guide
 - https://medium.com/linux-with-michael/a-list-of-all-my-main-neovim-plugins-8ac4ae107e16
 - https://vonheikemen.github.io/devlog/tools/build-your-first-lua-config-for-neovim/
 
 ## Satisfying (trying) checkhealth
+
 To check run `:checkhealth` in neovim
 - Check latest version of `pynvim` is installed (via pip)
 - Check npm neovim is installed, but still no enough
 
 ## Plugins
+
 ### Plugin manager: Packer
+
 ### For the first use
+
 [source](https://github.com/wbthomason/packer.nvim#quickstart)
 
 
@@ -130,6 +167,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 </details>
 
 ## External dependencies
+
 - `ripgrep`
 - `fd-find`
 - `python3`
