@@ -1,7 +1,13 @@
 require('gitsigns').setup {
   signs = {
-    delete = { hl = 'GitSignsDelete', text = '-', numhl='GitSignsDeleteNr', linehl='GitSignsDeleteLn' }
+    delete = {
+      hl = 'GitSignsDelete',
+      text = '-',
+      numhl='GitSignsDeleteNr',
+      linehl='GitSignsDeleteLn'
+    }
   },
+  current_line_blame = true,
   on_attach = function(bufnr)
     local gs = package.loaded.gitsigns
 
