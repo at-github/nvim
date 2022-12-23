@@ -6,7 +6,9 @@ and some plugin need **0.7** version.
 
 ## Commands
 
+### Visual
 - `<leader>t` to switch dark|light theme
+- `<leader>g` toggle goyo view mode
 
 ### GitSigns
 
@@ -19,6 +21,7 @@ and some plugin need **0.7** version.
 - `<leader>hb` preview hunk in popup
 - `<leader>tb` preview hunk in line
 - `<leader>hd` diff current file
+
 
 ## Some resources
 - https://teukka.tech/luanvim.html
