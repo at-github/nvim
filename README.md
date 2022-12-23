@@ -6,6 +6,14 @@ and some plugin need **0.7** version.
 
 ## Commands
 
+### General
+- `<leader>+` Increase first number in line after the cursor
+- `<leader>-` Decrease first number in line after the cursor
+- `<leader>w` Close buffer
+- `<leader>q` Quit all
+- `<F5>` Refresh buffer
+- `<leader>e` Refresh buffer
+
 ### Visual
 - `<leader>t` to switch dark|light theme
 - `<leader>g` toggle goyo view mode
@@ -22,6 +30,10 @@ and some plugin need **0.7** version.
 - `<leader>tb` preview hunk in line
 - `<leader>hd` diff current file
 
+### Telescope
+- `<leader>ff` find file
+- `<leader>fg` find file with git
+- `<leader>ft` find file with tag
 
 ## Some resources
 - https://teukka.tech/luanvim.html
