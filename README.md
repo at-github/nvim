@@ -1,5 +1,7 @@
 # nvim
 
+![screenshot](./screenshot.png)
+
 ## Notes
 Neovim must be above **0.5** to work well with lua config,
 and some plugin need **0.7** version.
