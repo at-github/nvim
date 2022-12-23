@@ -75,6 +75,7 @@ and some plugin need **0.7** version.
 - https://github.com/nanotee/nvim-lua-guide
 - https://medium.com/linux-with-michael/a-list-of-all-my-main-neovim-plugins-8ac4ae107e16
 - https://vonheikemen.github.io/devlog/tools/build-your-first-lua-config-for-neovim/
+- https://github.com/josean-dev/dev-environment-files
 
 ## Satisfying (trying) checkhealth
 
