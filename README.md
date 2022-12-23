@@ -8,6 +8,18 @@ and some plugin need **0.7** version.
 
 - `<leader>t` to switch dark|light theme
 
+### GitSigns
+
+- `]c` next hunk
+- `[c` next hunk
+- `<leader>hs` stage hunk
+- `<leader>hr` reset hunk
+- `<leader>hu` undo hunk
+- `<leader>hp` preview hunk
+- `<leader>hb` preview hunk in popup
+- `<leader>tb` preview hunk in line
+- `<leader>hd` diff current file
+
 ## Some resources
 - https://teukka.tech/luanvim.html
 - https://github.com/nanotee/nvim-lua-guide
