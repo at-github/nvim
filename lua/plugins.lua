@@ -146,7 +146,10 @@ return require('packer').startup(function(use)
     config = function() require'plugins.gitsigns' end
   }
 
-  use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
+  use{
+    "alexghergh/nvim-tmux-navigation",
+    config = function() require'plugins.nvim-tmux-navigation' end
+  } -- tmux & split window navigation
 
   use("inkarkat/vim-ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
   use("sangdol/mintabline.vim")

@@ -17,6 +17,7 @@ and some plugin need **0.7** version.
 - `<leader>q` quit all
 - `<F5>` Refresh buffer
 - `<leader>e` refresh buffer
+- `<C-↑→↓←>` to move into panes
 
 ### Visual
 
@@ -100,74 +101,6 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 > You must run this or `PackerSync` whenever you make changes to your plugin configuration
 > Regenerate compiled loader file
 > `:PackerCompile`
-
-### List
-
-<details>
- <summary>`PackerStatus` :</summary>
-
-- LuaSnip
-  - Some useful inspiration for snippets: https://github.com/rafamadriz/friendly-snippets
-- goyo.vim
-- onedark.nvim
-- feline.nvim
-- PHP_CodeSniffer
-- cmp-buffer
-- cmp-nvim-lsp
-- cmp-path
-- cmp_luasnip
-- eslint
-- gitsigns.nvim
-- indent-blankline.nvim
-- lspkind.nvim
-- lspsaga.nvim
-- mason-lspconfig.nvim
-- mason.nvim
-- mintabline.vim
-- nightfox.nvim
-- nvim-autopairs
-- nvim-cmp
-- nvim-comment
-- nvim-lint
-- nvim-lspconfig
-- nvim-surround
-- nvim-tree.lua (not loaded)
-- nvim-treesitter
-  - git_rebase
-  - gitattributes
-  - gitcommit
-  - css
-  - dockerfile
-  - html
-  - javascript
-  - jsdoc
-  - json
-  - json5
-  - lua
-  - make
-  - markdown
-  - ninja
-  - php
-  - python
-  - regex
-  - ruby
-  - scss
-  - sql
-  - tsx
-  - typescript
-  - yaml
-- nvim-ts-autotag
-- nvim-web-devicons
-- overlength.vim
-- packer.nvim
-- plenary.nvim
-- telescope.nvim
-- typescript.nvim
-- vim-ReplaceWithRegister
-- vim-fugitive
-- vim-tmux-navigator
-- vim-visual-star-search
-</details>
 
 ## External dependencies
 
