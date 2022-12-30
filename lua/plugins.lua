@@ -84,7 +84,10 @@ return require('packer').startup(function(use)
     config = function() require'plugins.nvim-autopairs' end
   }
 
-  use('windwp/nvim-ts-autotag')
+  use{
+    'windwp/nvim-ts-autotag',
+    config = function() require'plugins.nvim-ts-autotag' end
+  }
 
   use{ -- autocompletion
     'hrsh7th/nvim-cmp',
