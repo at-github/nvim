@@ -46,6 +46,8 @@ return require('packer').startup(function(use)
     config = function() require'plugins.treesitter' end
   }
 
+  use 'fladson/vim-kitty'
+
   use { -- need neovim > 0.8
     'kyazdani42/nvim-tree.lua',
     opt = true,
@@ -155,6 +157,7 @@ return require('packer').startup(function(use)
   } -- tmux & split window navigation
 
   use("inkarkat/vim-ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
+
   use("sangdol/mintabline.vim")
 
   if packer_bootstrap then
