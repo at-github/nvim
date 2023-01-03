@@ -21,3 +21,9 @@ map('n', '<leader>g', ":Goyo <cr>", noremap)
 map('n', '<leader>ff', ":Telescope find_files prompt_prefix= 🔍  find_command=rg,--ignore,--hidden,--files <cr>", noremap)
 map('n', '<leader>fg', ":Telescope git_files  prompt_prefix=  <cr>", noremap)
 map('n', '<leader>ft', ":Telescope help_tags  prompt_prefix=  <cr>",  noremap)
+
+-- Vim-tmux-navigator
+map('n', "<C-Left>", ":TmuxNavigateLeft<cr>", noremap)
+map('n', "<C-Down>", ":TmuxNavigateDown<cr>", noremap)
+map('n', "<C-Up>", ":TmuxNavigateUp<cr>", noremap)
+map('n', "<C-Right>", ":TmuxNavigateRight<cr>", noremap)
