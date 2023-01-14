@@ -22,6 +22,8 @@ vim.cmd([[
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
+  use 'lewis6991/impatient.nvim'
+
   use 'tpope/vim-fugitive' -- Git commands
 
   use 'kyazdani42/nvim-web-devicons' -- Icons
