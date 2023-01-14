@@ -76,6 +76,8 @@ return require('packer').startup(function(use)
     config = function() require'nvim-surround'.setup({}) end
   }
 
+  use 'chaoren/vim-wordmotion' -- Smart motion inside words
+
   use {
     'terrortylor/nvim-comment',
     config = function() require'nvim_comment'.setup() end
