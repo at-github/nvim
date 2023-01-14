@@ -22,93 +22,92 @@ vim.cmd([[
 return require('packer').startup(function(use)
 
   -- CORE
-  use 'wbthomason/packer.nvim'
-  use 'lewis6991/impatient.nvim'
-    -- configuring lsp servers
-  use{
+  use 'wbthomason/packer.nvim' -- Plugin manager
+  use 'lewis6991/impatient.nvim' -- Speed up neovim
+  use{ -- Configuring lsp servers
     "neovim/nvim-lspconfig",
     config = function() require'plugins.nvim-lspconfig' end
-  } -- easily configure language servers
-  use{
+  }
+  use{ -- Install and manage LSP servers, DAP servers, linters, and formatters
     "williamboman/mason.nvim",
     config = function() require'mason'.setup() end
-  } -- in charge of managing lsp servers, linters & formatters
-  use{
+  }
+  use{ -- Bridges mason.nvim with the lspconfig plugin
     "williamboman/mason-lspconfig.nvim",
     config = function() require'plugins.mason-lspconfig' end
-  } -- bridges gap b/w mason & lspconfig
-  use{
+  }
+  use{ -- Light-weight lsp plugin based on neovim's built-in lsp
     "glepnir/lspsaga.nvim",
     branch = "main",
     config = function() require'plugins.lspsaga-nvim' end
-  } -- enhanced lsp uis
+  }
 
   -- SYNTAX
-  use {
+  use { -- Provide a way to use the interface for tree-sitter in Neovim
+        -- and to provide some basic functionality such as highlighting based on it
     'nvim-treesitter/nvim-treesitter',
     config = function() require'plugins.treesitter' end
   }
-  use 'fladson/vim-kitty'
-  use {
+  use 'fladson/vim-kitty' -- Syntax highlight for kitty configuration
+  use { -- Indentation guides
     'lukas-reineke/indent-blankline.nvim',
     config = function() require'plugins.indent-blankline' end
   }
-  use 'tjdevries/overlength.vim'
-  use {
+  use 'tjdevries/overlength.vim' -- Highlight overlength lines
+  use { -- Linters
     'mfussenegger/nvim-lint',
     requires = {'eslint/eslint', 'squizlabs/PHP_CodeSniffer'},
     config = function() require'plugins.nvim-lint' end
   }
 
   -- EDITING
-  use {
+  use { -- Surround selections
     'kylechui/nvim-surround',
     tag = '*', -- Use for stability; omit to use `main` branch for the latest features
     config = function() require'nvim-surround'.setup({}) end
   }
   use 'chaoren/vim-wordmotion' -- Smart motion inside words
-  use {
+  use { -- Easy comment
     'terrortylor/nvim-comment',
     config = function() require'nvim_comment'.setup() end
   }
-  use{
+  use{ -- Auto complete pairs symbols
     'windwp/nvim-autopairs',
     config = function() require'plugins.nvim-autopairs' end
   }
-  use{
+  use{ -- Autoclose and autorename html tag
     'windwp/nvim-ts-autotag',
     config = function() require'plugins.nvim-ts-autotag' end
   }
-  use{ -- snippet engine
+  use{ -- Snippet engine
     "L3MON4D3/LuaSnip",
     config = function()
       require("luasnip.loaders.from_vscode").lazy_load({paths = "~/.config/nvim/my_snippets"})
     end
   }
-  use("inkarkat/vim-ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
-  use("jose-elias-alvarez/typescript.nvim") -- additional functionality for typescript server (e.g. rename file & update imports)
-  use 'nelstrom/vim-visual-star-search'
+  use("inkarkat/vim-ReplaceWithRegister") -- Replace with register contents using motion (gr + motion)
+  use("jose-elias-alvarez/typescript.nvim") -- Additional functionality for typescript server (e.g. rename file & update imports)
+  use 'nelstrom/vim-visual-star-search' -- Search based selection
 
   -- -- COMPLETION
-  use{ -- autocompletion
+  use{ -- Completion engine
     'hrsh7th/nvim-cmp',
     config = function() require'plugins.nvim-cmp' end
   }
-  use("saadparwaiz1/cmp_luasnip") -- snippet autocompletion
-  use("hrsh7th/cmp-nvim-lsp") -- for autocompletion
-  use("hrsh7th/cmp-buffer") -- source for text in buffer
-  use("hrsh7th/cmp-path") -- source for file system paths
-  -- managing & installing lsp servers, linters & formatters
+  use("saadparwaiz1/cmp_luasnip") -- Snippet autocompletion
+  use("hrsh7th/cmp-nvim-lsp") -- For autocompletion
+  use("hrsh7th/cmp-buffer") -- Source for text in buffer
+  use("hrsh7th/cmp-path") -- Source for file system paths
 
   -- -- GIT
   use 'tpope/vim-fugitive' -- Git commands
-  use {
+  use { -- Git symbols in gutter & jump and handle hunks
     'lewis6991/gitsigns.nvim',
     config = function() require'plugins.gitsigns' end
   }
 
   -- NAVIGATION
-  use { -- need neovim > 0.8
+  use { -- File explorer neovim > 0.8
     'kyazdani42/nvim-tree.lua',
     opt = true,
     requires = {
@@ -117,28 +116,28 @@ return require('packer').startup(function(use)
     cmd = {'NvimTreeToggle', 'NvimTreeFindFile'},
     config = function() require'plugins.tree' end
   }
-  use {
+  use { -- Fuzzy finder
     'nvim-telescope/telescope.nvim',
     tag = '0.1.0',
     requires = {'nvim-lua/plenary.nvim'},
     config = function() require'plugins.telescope' end
   }
-  use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
+  use("christoomey/vim-tmux-navigator") -- Tmux & split window navigation
 
   -- UI
-  use {
+  use { -- Themes
     'navarasu/onedark.nvim',
     config = function() require'plugins.onedark' end
   }
-  use { -- status line
+  use { -- Status line
     'feline-nvim/feline.nvim',
     branch = '0.5-compat',
     config = function() require'plugins.feline' end
   }
-  use("sangdol/mintabline.vim")
-  use 'kyazdani42/nvim-web-devicons'
+  use("sangdol/mintabline.vim") -- Add symbol in tab
+  use 'kyazdani42/nvim-web-devicons' -- Icons
   use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
-  use 'junegunn/goyo.vim'
+  use 'junegunn/goyo.vim' -- Distraction free visualisation
 
   if packer_bootstrap then
     require("packer").sync()
