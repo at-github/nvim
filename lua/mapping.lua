@@ -7,23 +7,26 @@ local noremap = {noremap = true}
 map('n', '<leader>+', '<C-a>', noremap)
 map('n', '<leader>-', '<C-x>', noremap)
 
-map('n', '<leader>o', ":on<cr>", noremap)
-map('n', '<leader>w', ":q<cr>", noremap)
-map('n', '<leader>q', ":qa<cr>", noremap)
+map('n', '<leader>o', ':on<cr>', noremap)
+map('n', '<leader>w', ':q<cr>', noremap)
+map('n', '<leader>q', ':qa<cr>', noremap)
 
 map('n', '<F5>', ':e!<CR>', noremap)
 map('n', '<leader>e', ':NvimTreeToggle<CR>', noremap)
 
 -- Goyo
-map('n', '<leader>g', ":Goyo <cr>", noremap)
+map('n', '<leader>g', ':Goyo <cr>', noremap)
 
 -- Telescope
-map('n', '<leader>ff', ":Telescope find_files prompt_prefix= 🔍  find_command=rg,--ignore,--hidden,--files <cr>", noremap)
-map('n', '<leader>fg', ":Telescope git_files  prompt_prefix=  <cr>", noremap)
-map('n', '<leader>ft', ":Telescope help_tags  prompt_prefix=  <cr>",  noremap)
+map('n', '<leader>ff', ':Telescope find_files prompt_prefix= 🔍  find_command=rg,--ignore,--hidden,--files <cr>', noremap)
+map('n', '<leader>fg', ':Telescope git_files  prompt_prefix=  <cr>', noremap)
+map('n', '<leader>ft', ':Telescope help_tags  prompt_prefix=  <cr>',  noremap)
 
 -- Vim-tmux-navigator
-map('n', "<C-Left>", ":TmuxNavigateLeft<cr>", noremap)
-map('n', "<C-Down>", ":TmuxNavigateDown<cr>", noremap)
-map('n', "<C-Up>", ":TmuxNavigateUp<cr>", noremap)
-map('n', "<C-Right>", ":TmuxNavigateRight<cr>", noremap)
+map('n', '<C-Left>', ':TmuxNavigateLeft<cr>', noremap)
+map('n', '<C-Down>', ':TmuxNavigateDown<cr>', noremap)
+map('n', '<C-Up>', ':TmuxNavigateUp<cr>', noremap)
+map('n', '<C-Right>', ':TmuxNavigateRight<cr>', noremap)
+
+-- Vim-easy-align
+map('v', '<leader>=', ':LiveEasyAlign<cr>', noremap)

@@ -70,6 +70,9 @@ and some plugin need **0.7** version.
 - `<leader>oi` organize imports
 - `<leader>ru` remove unused variables
 
+#### Easy align
+- `<leader>=` interactively align selection
+
 ## Some resources
 
 - https://teukka.tech/luanvim.html
