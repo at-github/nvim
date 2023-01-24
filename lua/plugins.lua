@@ -85,8 +85,8 @@ return require('packer').startup(function(use)
       require('luasnip.loaders.from_vscode').lazy_load({paths = '~/.config/nvim/my_snippets'})
     end
   }
-  use('inkarkat/vim-ReplaceWithRegister') -- Replace with register contents using motion (gr + motion)
-  use('jose-elias-alvarez/typescript.nvim') -- Additional functionality for typescript server (e.g. rename file & update imports)
+  use 'inkarkat/vim-ReplaceWithRegister' -- Replace with register contents using motion (gr + motion)
+  use 'jose-elias-alvarez/typescript.nvim' -- Additional functionality for typescript server (e.g. rename file & update imports)
   use 'nelstrom/vim-visual-star-search' -- Search based selection
   use 'junegunn/vim-easy-align'
 
@@ -95,10 +95,10 @@ return require('packer').startup(function(use)
     'hrsh7th/nvim-cmp',
     config = function() require'plugins.nvim-cmp' end
   }
-  use('saadparwaiz1/cmp_luasnip') -- Snippet autocompletion
-  use('hrsh7th/cmp-nvim-lsp') -- For autocompletion
-  use('hrsh7th/cmp-buffer') -- Source for text in buffer
-  use('hrsh7th/cmp-path') -- Source for file system paths
+  use 'saadparwaiz1/cmp_luasnip' -- Snippet autocompletion
+  use 'hrsh7th/cmp-nvim-lsp' -- For autocompletion
+  use 'hrsh7th/cmp-buffer' -- Source for text in buffer
+  use 'hrsh7th/cmp-path' -- Source for file system paths
 
   -- -- GIT
   use 'tpope/vim-fugitive' -- Git commands
@@ -123,7 +123,7 @@ return require('packer').startup(function(use)
     requires = {'nvim-lua/plenary.nvim'},
     config = function() require'plugins.telescope' end
   }
-  use('christoomey/vim-tmux-navigator') -- Tmux & split window navigation
+  use 'christoomey/vim-tmux-navigator' -- Tmux & split window navigation
 
   -- UI
   use { -- Themes
@@ -135,9 +135,9 @@ return require('packer').startup(function(use)
     branch = '0.5-compat',
     config = function() require'plugins.feline' end
   }
-  use('sangdol/mintabline.vim') -- Add symbol in tab
+  use 'sangdol/mintabline.vim' -- Add symbol in tab
   use 'kyazdani42/nvim-web-devicons' -- Icons
-  use('onsails/lspkind.nvim') -- vs-code like icons for autocompletion
+  use 'onsails/lspkind.nvim' -- vs-code like icons for autocompletion
   use 'junegunn/goyo.vim' -- Distraction free visualisation
 
   if packer_bootstrap then
