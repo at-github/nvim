@@ -89,8 +89,18 @@ return require('packer').startup(function(use)
   use 'jose-elias-alvarez/typescript.nvim' -- Additional functionality for typescript server (e.g. rename file & update imports)
   use 'nelstrom/vim-visual-star-search' -- Search based selection
   use 'junegunn/vim-easy-align'
+  use({
+    'NFrid/markdown-togglecheck',
+    requires = 'NFrid/treesitter-utils',
+    config = function()
+      -- -- toggle checked / create checkbox if it doesn't exist
+      -- vim.api.nvim_set_keymap('n', '<leader>nn', require('markdown-togglecheck').toggle)
+      -- -- toggle checkbox (it doesn't remember toggle state and always creates [ ])
+      -- vim.api.nvim_set_keymap('n', '<leader>nN', require('markdown-togglecheck').toggle_box)
+    end
+  })
 
-  -- -- COMPLETION
+  -- COMPLETION
   use{ -- Completion engine
     'hrsh7th/nvim-cmp',
     config = function() require'plugins.nvim-cmp' end

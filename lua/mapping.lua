@@ -30,3 +30,9 @@ map('n', '<C-Right>', ':TmuxNavigateRight<cr>', noremap)
 
 -- Vim-easy-align
 map('v', '<leader>=', ':LiveEasyAlign<cr>', noremap)
+
+-- Mardown togglecheck
+-- -- toggle checked / create checkbox if it doesn't exist
+map('n', '<space>', ":lua require('markdown-togglecheck').toggle()<cr>", noremap)
+-- -- toggle checkbox (it doesn't remember toggle state and always creates [ ])
+map('n', '<leader><space>', ":lua require('markdown-togglecheck').toggle_box()<cr>", noremap)
