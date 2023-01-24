@@ -57,18 +57,6 @@ opt.cursorline = true
 -- Clipboard
 opt.clipboard:append('unnamedplus')
 
-function toggleThemeLight()
-  opt.background = opt.background == 'dark' and 'light' or 'dark'
-end
-
 -- Split
 opt.splitright = true
 opt.splitbelow = true
-
--- COC TODO move it in plugin file
-vim.cmd([[
-  function! CheckBackspace() abort
-    let col = col('.') - 1
-    return !col || getline('.')[col - 1]  =~# '\s'
-  endfunction
-]])
