@@ -138,7 +138,11 @@ return require('packer').startup(function(use)
   use 'sangdol/mintabline.vim' -- Add symbol in tab
   use 'kyazdani42/nvim-web-devicons' -- Icons
   use 'onsails/lspkind.nvim' -- vs-code like icons for autocompletion
-  use 'junegunn/goyo.vim' -- Distraction free visualisation
+  use { -- Distraction free visualisation
+    'junegunn/goyo.vim',
+    config = function() require'plugins.goyo' end
+  }
+  use 'junegunn/limelight.vim' -- Focus line
 
   if packer_bootstrap then
     require('packer').sync()
