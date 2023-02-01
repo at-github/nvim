@@ -39,10 +39,11 @@ opt.expandtab = true -- expand tab to spaces
 opt.autoindent = true
 
 vim.cmd([[
-  augroup tab_for_python
+  augroup tab_for_4_spaces
     autocmd FileType python setlocal ts=4 sts=4 sw=4 expandtab
     autocmd FileType php setlocal ts=4 sts=4 sw=4 expandtab
-    autocmd FileType make setlocal ts=4 sts=4 sw=4
+    autocmd FileType make setlocal ts=4 sts=4 sw=4 expandtab
+    autocmd FileType yaml setlocal ts=4 sts=4 sw=4 expandtab
   augroup end
 ]])
 
