@@ -48,6 +48,9 @@ and some plugin need **0.7** version.
 
 ### Completion
 
+Some lsp server work only inside project folder,
+needing *git* or *composer*…
+
 - `<CR>` to choose selected suggestion
 
 ### Lspsaga
@@ -80,6 +83,7 @@ and some plugin need **0.7** version.
 - https://medium.com/linux-with-michael/a-list-of-all-my-main-neovim-plugins-8ac4ae107e16
 - https://vonheikemen.github.io/devlog/tools/build-your-first-lua-config-for-neovim/
 - https://github.com/josean-dev/dev-environment-files
+- https://marioyepes.com/neovim-ide-with-lua-for-web-development/
 
 ## Satisfying (trying) checkhealth
 
@@ -119,4 +123,3 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
   - https://www.nerdfonts.com/
 - `composer`
   - `phpcs`
-    - `composer global require "squizlabs/php_codesniffer=*"`  [source](https://github.com/squizlabs/PHP_CodeSniffer#composer)
