@@ -114,9 +114,21 @@ lspconfig["marksman"].setup({
 })
 
 -- configure psalm server
-lspconfig["psalm"].setup({
+lspconfig["phpactor"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
+  init_options = {
+    ["language_server_phpstan.enabled"] = false,
+    ["language_server_psalm.enabled"] = false,
+  }
+})
+
+lspconfig["intelephense"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+  flags = {
+    debounce_text_changes = 150,
+  },
 })
 
 -- configure ruby_ls server

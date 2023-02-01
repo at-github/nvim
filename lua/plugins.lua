@@ -103,6 +103,12 @@ return require('packer').startup(function(use)
   -- COMPLETION
   use{ -- Completion engine
     'hrsh7th/nvim-cmp',
+    requires = {
+      "onsails/lspkind-nvim",     -- Icons on the popups
+      "hrsh7th/cmp-nvim-lsp",     -- LSP source for nvim-cmp
+      "saadparwaiz1/cmp_luasnip", -- Snippets source
+      "L3MON4D3/LuaSnip"
+    },
     config = function() require'plugins.nvim-cmp' end
   }
   use 'saadparwaiz1/cmp_luasnip' -- Snippet autocompletion
