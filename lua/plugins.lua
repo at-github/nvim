@@ -23,7 +23,7 @@ return require('packer').startup(function(use)
 
   -- CORE
   use 'wbthomason/packer.nvim' -- Plugin manager
-  use 'lewis6991/impatient.nvim' -- Speed up neovim
+  -- use 'lewis6991/impatient.nvim' -- Speed up neovim
   use{ -- Configuring lsp servers
     'neovim/nvim-lspconfig',
     config = function() require'plugins.nvim-lspconfig' end

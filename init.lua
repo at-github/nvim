@@ -1,4 +1,4 @@
-require('impatient')
+-- require('impatient') -- FIXME not properly installed
 
 vim.g['python3_host_prog'] = '/usr/bin/python3'
 
