@@ -14,6 +14,7 @@ local phpcs = require('lint.linters.phpcs')
 phpcs.args = {
   '-q',
   '--standard=/home/tarik/.config/nvim/standard.xml',
+  '--extensions=php',
   '--report=json',
   '-'
 }
