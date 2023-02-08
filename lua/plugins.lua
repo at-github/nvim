@@ -53,7 +53,10 @@ return require('packer').startup(function(use)
     'lukas-reineke/indent-blankline.nvim',
     config = function() require'plugins.indent-blankline' end
   }
-  use 'tjdevries/overlength.vim' -- Highlight overlength lines
+  use { -- Highlight overlength lines
+    'lcheylus/overlength.nvim',
+    config = function() require'plugins.overlength' end
+  }
   use { -- Linters
     'mfussenegger/nvim-lint',
     requires = {'eslint/eslint', 'squizlabs/PHP_CodeSniffer'},
