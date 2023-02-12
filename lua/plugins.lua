@@ -63,6 +63,15 @@ return require('packer').startup(function(use)
     config = function() require'plugins.nvim-lint' end
   }
   use 'tpope/vim-rails'
+  use {
+    'RRethy/nvim-treesitter-endwise',
+    config = function() require'nvim-treesitter.configs'.setup {
+      endwise = {
+        enable = true,
+      }
+    }
+    end
+  }
 
   -- EDITING
   use { -- Surround selections
