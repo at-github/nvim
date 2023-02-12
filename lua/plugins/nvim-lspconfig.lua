@@ -137,6 +137,12 @@ lspconfig["ruby_ls"].setup({
   on_attach = on_attach,
 })
 
+-- configure solargraph server
+lspconfig["solargraph"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
 -- configure sqlls server
 lspconfig["sqlls"].setup({
   capabilities = capabilities,

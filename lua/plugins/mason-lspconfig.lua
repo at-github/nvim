@@ -10,6 +10,7 @@ mason_lspconfig.setup({
     'marksman',
     'phpactor',
     'ruby_ls',
+    'solargraph',
     'sqlls',
     'sumneko_lua',
     'tailwindcss',
