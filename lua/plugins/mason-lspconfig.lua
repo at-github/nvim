@@ -12,7 +12,7 @@ mason_lspconfig.setup({
     'ruby_ls',
     'solargraph',
     'sqlls',
-    'sumneko_lua',
+    'lua_ls',
     'tailwindcss',
     'tsserver',
     'yamlls'
