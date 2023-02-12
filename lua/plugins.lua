@@ -153,6 +153,12 @@ return require('packer').startup(function(use)
     config = function() require'plugins.telescope' end
   }
   use 'christoomey/vim-tmux-navigator' -- Tmux & split window navigation
+  use {
+    'glepnir/dashboard-nvim',
+    event = 'VimEnter',
+    config = function() require'plugins.dashboard' end,
+    requires = {'nvim-tree/nvim-web-devicons'}
+  }
 
   -- UI
   use { -- Themes

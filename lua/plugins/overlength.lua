@@ -28,6 +28,7 @@ require('overlength').setup({
     'NvimTree',
     'Telescope',
     'WhichKey',
-    'markdown'
+    'markdown',
+    'dashboard'
   }
 })
