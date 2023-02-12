@@ -62,6 +62,7 @@ return require('packer').startup(function(use)
     requires = {'eslint/eslint', 'squizlabs/PHP_CodeSniffer'},
     config = function() require'plugins.nvim-lint' end
   }
+  use 'tpope/vim-rails'
 
   -- EDITING
   use { -- Surround selections

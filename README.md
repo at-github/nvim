@@ -73,6 +73,31 @@ needing *git* or *composer*…
 - `<leader>oi` organize imports
 - `<leader>ru` remove unused variables
 
+#### Ruby On Rails specific
+
+- `:A` alternate between file & test
+- `:R` jump to related controller->view
+- `:Emodel` jump to related model
+- `:Smodel` same but in split
+- `:Vmodel` same but in vsplit
+- `:Tmodel` same but in tab
+- `:Eview` jump to related view
+- `:Sview` same but in split
+- `:Vview` same but in vsplit
+- `:Tview` same but in tab
+- `:Econtroller` jump to related controller
+- `:Scontroller` same but in split
+- `:Vcontroller` same but in vsplit
+- `:Tcontroller` same but in tab
+- `:Emodel foo!` to automatically create the file with the standard boilerplate if it doesn't exist
+- `:Rails console` to call `rails console`
+- `:Generate controller ControllerName` generate controller and loads the generated files into the quickfix list
+- `:Rails` (with no arguments) to run the current test, spec, or feature
+- `:.Rails` to do a focused run of just the method, example, or scenario on the current line
+- `:Extract {file}` replaces the desired range (typically selected in visual line mode) with render '{file}'
+  - `help rails-:Extract`
+- `:help rails-navigation`
+
 #### Easy align
 - `<leader>=` interactively align selection
 
