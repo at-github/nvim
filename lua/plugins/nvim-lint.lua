@@ -24,7 +24,8 @@ lint.linters_by_ft = {
   javascript = {'eslint'},
   typescript = {'eslint'},
   typescriptreact = {'eslint'},
-  php = {'phpcs'}
+  php = {'phpcs'},
+  ruby = {'ruby'}
 }
 
 vim.cmd('autocmd BufEnter,BufWritePost,InsertLeave * lua require("lint").try_lint()')
