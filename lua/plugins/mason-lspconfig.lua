@@ -15,6 +15,7 @@ mason_lspconfig.setup({
     'lua_ls',
     'tailwindcss',
     'tsserver',
+    'volar',
     'yamlls'
   }
 })
