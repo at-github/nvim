@@ -41,6 +41,7 @@ and some plugin need **0.7** version.
 - `<leader>ff` find file
 - `<leader>fg` find file with git
 - `<leader>ft` find file with tag
+- `<leader>fgg` find file with grep
 
 ### Saga
 

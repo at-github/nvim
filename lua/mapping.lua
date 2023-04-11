@@ -20,6 +20,7 @@ map('n', '<leader>g', ':Goyo <cr>', noremap)
 -- Telescope
 map('n', '<leader>ff', ':Telescope find_files prompt_prefix= 🔍  find_command=rg,--ignore,--hidden,--files <cr>', noremap)
 map('n', '<leader>fg', ':Telescope git_files  prompt_prefix=  <cr>', noremap)
+map('n', '<leader>fgg', ':Telescope live_grep  prompt_prefix= 🔎 <cr>', noremap)
 map('n', '<leader>ft', ':Telescope help_tags  prompt_prefix=  <cr>',  noremap)
 
 -- Vim-tmux-navigator
