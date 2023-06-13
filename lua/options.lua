@@ -45,6 +45,11 @@ vim.cmd([[
     autocmd FileType make setlocal ts=4 sts=4 sw=4 expandtab
     autocmd FileType yaml setlocal ts=4 sts=4 sw=4 expandtab
   augroup end
+
+  augroup un_explicit_files
+    autocmd BufRead,BufNewFile *.js.erb setfiletype javascript
+    autocmd BufRead,BufNewFile *.css.erb setfiletype css
+  augroup end
 ]])
 
 -- Backspace
