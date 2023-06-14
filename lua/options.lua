@@ -47,8 +47,8 @@ vim.cmd([[
   augroup end
 
   augroup un_explicit_files
-    autocmd BufRead,BufNewFile *.js.erb setfiletype javascript
-    autocmd BufRead,BufNewFile *.css.erb setfiletype css
+    autocmd BufRead,BufNewFile *.js.erb setfiletype javascript.erb
+    autocmd BufRead,BufNewFile *.css.erb setfiletype css.erb
   augroup end
 ]])
 
