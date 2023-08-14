@@ -180,6 +180,10 @@ return require('packer').startup(function(use)
     config = function() require'plugins.goyo' end
   }
   use 'junegunn/limelight.vim' -- Focus line
+  use {
+    'levouh/tint.nvim',
+    config = function() require'tint'.setup() end
+  }
 
   if packer_bootstrap then
     require('packer').sync()
