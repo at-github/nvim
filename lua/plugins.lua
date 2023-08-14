@@ -157,7 +157,7 @@ return require('packer').startup(function(use)
     requires = {'nvim-lua/plenary.nvim'},
     config = function() require'plugins.telescope' end
   }
-  use {
+  use { -- Smarter fuzzy finder
     'danielfalk/smart-open.nvim',
     branch = '0.2.x',
     config = function()
