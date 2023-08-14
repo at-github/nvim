@@ -146,6 +146,11 @@ return require('packer').startup(function(use)
       'MunifTanjim/nui.nvim'
     }
   }
+  use {
+    'Bekaboo/dropbar.nvim',
+    -- disable = true
+    opt = true -- optional
+  }
   use { -- Fuzzy finder
     'nvim-telescope/telescope.nvim',
     tag = '0.1.2',
