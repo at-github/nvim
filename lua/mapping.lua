@@ -12,7 +12,7 @@ map('n', '<leader>w', ':q<cr>', noremap)
 map('n', '<leader>q', ':qa<cr>', noremap)
 
 map('n', '<F5>', ':e!<CR>', noremap)
-map('n', '<leader>e', ':NvimTreeToggle<CR>', noremap)
+map('n', '<leader>e', ':Neotree toggle<CR>', noremap)
 
 -- Goyo
 map('n', '<leader>g', ':Goyo <cr>', noremap)

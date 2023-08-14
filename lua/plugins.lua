@@ -137,14 +137,14 @@ return require('packer').startup(function(use)
   }
 
   -- NAVIGATION
-  use { -- File explorer neovim > 0.8
-    'kyazdani42/nvim-tree.lua',
-    opt = true,
+  use {
+    'nvim-neo-tree/neo-tree.nvim',
+    branch = "v3.x",
     requires = {
-      'kyazdani42/nvim-web-devicons',
-    },
-    cmd = {'NvimTreeToggle', 'NvimTreeFindFile'},
-    config = function() require'plugins.tree' end
+      'nvim-lua/plenary.nvim',
+      'nvim-tree/nvim-web-devicons',
+      'MunifTanjim/nui.nvim'
+    }
   }
   use { -- Fuzzy finder
     'nvim-telescope/telescope.nvim',
