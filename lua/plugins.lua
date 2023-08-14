@@ -154,6 +154,16 @@ return require('packer').startup(function(use)
     requires = {'nvim-lua/plenary.nvim'},
     config = function() require'plugins.telescope' end
   }
+  use {
+    'danielfalk/smart-open.nvim',
+    branch = '0.2.x',
+    config = function()
+      require'telescope'.load_extension('smart_open')
+    end,
+    requires = {
+      {'kkharji/sqlite.lua'}
+    }
+  }
   use 'christoomey/vim-tmux-navigator' -- Tmux & split window navigation
   use {
     'glepnir/dashboard-nvim',
