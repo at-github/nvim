@@ -7,15 +7,19 @@ mason_lspconfig.setup({
     'html',
     'intelephense',
     'jsonls',
+    'lua_ls',
     'marksman',
     'phpactor',
+    'pylsp',
     'ruby_ls',
     'solargraph',
     'sqlls',
-    'lua_ls',
     'tailwindcss',
     'tsserver',
     'volar',
     'yamlls'
+  },
+  pip = {
+    upgrade_pip = true
   }
 })

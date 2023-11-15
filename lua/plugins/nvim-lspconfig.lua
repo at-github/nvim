@@ -41,13 +41,13 @@ for type, icon in pairs(signs) do
   vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 end
 
--- configure html server
+-- Lsp list: https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
+
 lspconfig["html"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
 })
 
--- configure typescript server with plugin
 typescript.setup({
   server = {
     capabilities = capabilities,
@@ -55,19 +55,16 @@ typescript.setup({
   },
 })
 
--- configure css server
 lspconfig["cssls"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
 })
 
--- configure tailwindcss server
 lspconfig["tailwindcss"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
 })
 
--- configure lua server (with special settings)
 lspconfig["lua_ls"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
@@ -88,31 +85,26 @@ lspconfig["lua_ls"].setup({
   },
 })
 
--- configure dockerls server
 lspconfig["dockerls"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
 })
 
--- configure eslint server
 lspconfig["eslint"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
 })
 
--- configure jsonls server
 lspconfig["jsonls"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
 })
 
--- configure marksman server
 lspconfig["marksman"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
 })
 
--- configure psalm server
 lspconfig["phpactor"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
@@ -130,32 +122,32 @@ lspconfig["intelephense"].setup({
   },
 })
 
--- configure ruby_ls server
 lspconfig["ruby_ls"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
 })
 
--- configure solargraph server
 lspconfig["solargraph"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
 })
 
--- configure sqlls server
 lspconfig["sqlls"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
 })
 
--- configure yamlls
 lspconfig["yamlls"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
 })
 
--- configure volar
 lspconfig["volar"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
+lspconfig["pylsp"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
 })
