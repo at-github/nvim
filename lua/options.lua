@@ -67,7 +67,8 @@ opt.clipboard:append('unnamedplus')
 opt.splitright = true
 opt.splitbelow = true
 
--- WIP use popup to read my neovim READM Ehttps://dev.to/____marcell/how-to-create-an-ui-menu-in-neovim-2k6a
+-- Preview README.md
+-- Way found here: https://dev.to/____marcell/how-to-create-an-ui-menu-in-neovim-2k6a
 local popup = require("plenary.popup")
 local Win_id
 
