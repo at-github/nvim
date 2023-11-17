@@ -97,10 +97,7 @@ function CloseMenu()
 end
 
 function PreviewReadme()
-  local content = {
-    "~/.config/nvim/README.md"
-  }
-
+  local content = vim.fn.readfile("/home/tarik/.config/nvim/README.md")
   local callback_after_click = function(_, sel)
     print("it works")
   end
