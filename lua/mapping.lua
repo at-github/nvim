@@ -13,6 +13,7 @@ map('n', '<leader>q', ':qa<cr>', noremap)
 
 map('n', '<F5>', ':e!<CR>', noremap)
 map('n', '<leader>e', ':Neotree toggle<CR>', noremap)
+map('n', '<leader>r', ':lua PreviewReadme()<CR>', noremap)
 
 -- Goyo
 map('n', '<leader>g', ':Goyo <cr>', noremap)
