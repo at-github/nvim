@@ -73,17 +73,16 @@ local Win_id
 
 function ShowPopup(content, cb)
   local height = 20
-  local width = 30
+  local width = 60
   local borderchars = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" }
 
-  -- TODO how to find a documentation about options?
   -- https://github.com/nvim-lua/plenary.nvim/blob/master/lua/plenary/popup/init.lua
   Win_id = popup.create(content, {
         title = "My Neovim README",
         highlight = "MyNeovimREADMEWindow",
         line = math.floor(((vim.o.lines - height) / 2) - 1),
         col = math.floor((vim.o.columns - width) / 2),
-        minwidth = width,
+        maxwidth = width,
         minheight = height,
         borderchars = borderchars,
         callback = cb,
