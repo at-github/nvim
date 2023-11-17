@@ -42,6 +42,7 @@ return require('packer').startup(function(use)
     branch = 'main',
     config = function() require'plugins.lspsaga-nvim' end
   }
+  use "nvim-lua/plenary.nvim"
 
   -- SYNTAX
   use { -- Provide a way to use the interface for tree-sitter in Neovim
