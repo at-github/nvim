@@ -57,7 +57,7 @@ opt.backspace = 'indent,eol,start' -- backspace works on every char in insert mo
 opt.iskeyword:append('-')
 opt.iskeyword:append('$')
 
--- cursor
+-- Cursor
 opt.cursorline = true
 
 -- Clipboard
@@ -84,7 +84,7 @@ function ShowPopup(content, cb)
         line = math.floor(((vim.o.lines - height) / 2) - 1),
         col = math.floor((vim.o.columns - width) / 2),
         maxwidth = width,
-        minheight = height,
+        maxheight = height,
         borderchars = borderchars,
         callback = cb,
   })
