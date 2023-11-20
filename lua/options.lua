@@ -70,7 +70,7 @@ opt.splitbelow = true
 -- Preview README.md
 -- Way found here: https://dev.to/____marcell/how-to-create-an-ui-menu-in-neovim-2k6a
 local popup = require("plenary.popup")
-local Win_id
+local buffer_id
 
 function ShowPopup(content, cb)
   local height = 20
@@ -78,7 +78,7 @@ function ShowPopup(content, cb)
   local borderchars = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" }
 
   -- https://github.com/nvim-lua/plenary.nvim/blob/master/lua/plenary/popup/init.lua
-  Win_id = popup.create(content, {
+  buffer_id = popup.create(content, {
         title = "My Neovim README",
         highlight = "MyNeovimREADMEWindow",
         line = math.floor(((vim.o.lines - height) / 2) - 1),
@@ -88,12 +88,14 @@ function ShowPopup(content, cb)
         borderchars = borderchars,
         callback = cb,
   })
-  local buffer = vim.api.nvim_win_get_buf(Win_id)
+
+  local buffer = vim.api.nvim_win_get_buf(buffer_id)
   vim.api.nvim_buf_set_keymap(buffer, "n", "q", "<cmd>lua CloseMenu()<CR>", { silent=false })
+  vim.api.nvim_command('set ft=markdown')
 end
 
 function CloseMenu()
-  vim.api.nvim_win_close(Win_id, true)
+  vim.api.nvim_win_close(buffer_id, true)
 end
 
 function PreviewReadme()
