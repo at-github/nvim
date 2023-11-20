@@ -80,7 +80,6 @@ function ShowPopup(content, cb)
   -- https://github.com/nvim-lua/plenary.nvim/blob/master/lua/plenary/popup/init.lua
   buffer_id = popup.create(content, {
         title = "My Neovim README",
-        highlight = "MyNeovimREADMEWindow",
         line = math.floor(((vim.o.lines - height) / 2) - 1),
         col = math.floor((vim.o.columns - width) / 2),
         maxwidth = width,
@@ -99,10 +98,8 @@ function CloseMenu()
 end
 
 function PreviewReadme()
-  local content = vim.fn.readfile("/home/tarik/.config/nvim/README.md")
-  local callback_after_click = function(_, sel)
-    print("it works")
-  end
+  local readme_path = "/home/tarik/.config/nvim/README.md"
+  local content = vim.fn.readfile(readme_path)
 
-  ShowPopup(content, callback_after_click)
+  ShowPopup(content)
 end
