@@ -53,7 +53,7 @@ return require('packer').startup(function(use)
   use 'fladson/vim-kitty' -- Syntax highlight for kitty configuration
   use { -- Indentation guides
     'lukas-reineke/indent-blankline.nvim',
-    config = function() require'plugins.indent-blankline' end
+    config = function() require('ibl').setup() end
   }
   use { -- Highlight overlength lines
     'lcheylus/overlength.nvim',
