@@ -157,6 +157,9 @@ lspconfig["pylsp"].setup({
         -- formatter options
         -- `:PylspInstall python-lsp-black` was needed
         black = { enabled = true },
+        -- import sorting
+        -- `:PylspInstall pyls-isort` was needed
+        pyls_isort = { enabled = true },
       },
     },
   },
