@@ -9,7 +9,6 @@ mason_lspconfig.setup({
     'jsonls',
     'lua_ls',
     'marksman',
-    'phpactor',
     'pylsp',
     'ruby_ls',
     'solargraph',
