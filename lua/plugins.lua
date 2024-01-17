@@ -33,7 +33,6 @@ return require('packer').startup(function(use)
     config = function() require'mason'.setup() end
   }
   use{ -- Bridges mason.nvim with the lspconfig plugin
-    "williamboman/mason.nvim",
     'williamboman/mason-lspconfig.nvim',
     config = function() require'plugins.mason-lspconfig' end
   }
