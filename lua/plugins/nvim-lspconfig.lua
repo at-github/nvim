@@ -148,6 +148,7 @@ lspconfig["volar"].setup({
   on_attach = on_attach,
 })
 
+-- Just for plugins linter
 lspconfig["pylsp"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
@@ -165,4 +166,23 @@ lspconfig["pylsp"].setup({
       },
     },
   },
+})
+
+-- Nice completion
+lspconfig["pyright"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+  settings = {
+    pyright = {
+      autoImportCompletion = true
+    },
+    python = {
+      analysis = {
+        autoSearchPaths = true,
+        diagnosticMode = 'openFilesOnly',
+        useLibraryCodeForTypes = true,
+        typeCheckingMode = 'off'
+      }
+    }
+  }
 })

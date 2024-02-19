@@ -11,6 +11,7 @@ mason_lspconfig.setup({
     'lua_ls',
     'marksman',
     'pylsp',
+    'pyright',
     'ruby_ls',
     'solargraph',
     'sqlls',
