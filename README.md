@@ -38,10 +38,9 @@ and some plugin need **0.7** version.
 
 ### Telescope
 
-- `<leader>ff` find file
-- `<leader>fg` find file with git
+- `<leader>f` find file with git
+- `<leader>fg` find file with grep
 - `<leader>ft` find file with tag
-- `<leader>fgg` find file with grep
 
 ### Saga
 
@@ -67,6 +66,7 @@ needing *git* or *composer*…
 - `]d` go to previous dianostic
 - `K` show documentation
 - `<leader>s` show structure
+- `<leader>f` format current buffer
 
 #### Typescript specific
 
