@@ -22,6 +22,7 @@ map('n', '<leader>g', ':Goyo <cr>', noremap)
 map('n', '<leader>f', ':Telescope git_files  prompt_prefix=  <cr>', noremap)
 map('n', '<leader>fg', ':Telescope live_grep  prompt_prefix= 🔎 <cr>', noremap)
 map('n', '<leader>ft', ':Telescope help_tags  prompt_prefix=  <cr>', noremap)
+map('n', '<leader>fr', ':Telescope resume  prompt_prefix=  <cr>', noremap)
 
 -- Vim-tmux-navigator
 map('n', '<C-Left>', ':TmuxNavigateLeft<cr>', noremap)
