@@ -160,19 +160,9 @@ return require('packer').startup(function(use)
   }
   use { -- Fuzzy finder
     'nvim-telescope/telescope.nvim',
-    tag = '0.1.2',
+    tag = '0.1.6',
     requires = {'nvim-lua/plenary.nvim'},
     config = function() require'plugins.telescope' end
-  }
-  use { -- Smarter fuzzy finder
-    'danielfalk/smart-open.nvim',
-    branch = '0.2.x',
-    config = function()
-      require'telescope'.load_extension('smart_open')
-    end,
-    requires = {
-      {'kkharji/sqlite.lua'}
-    }
   }
   use 'christoomey/vim-tmux-navigator' -- Tmux & split window navigation
   use {
