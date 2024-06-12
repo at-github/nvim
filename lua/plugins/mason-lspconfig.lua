@@ -12,7 +12,7 @@ mason_lspconfig.setup({
     'marksman',
     'pylsp',
     'pyright',
-    'ruby_ls',
+    'ruby_lsp',
     'solargraph',
     'sqlls',
     'tailwindcss',
