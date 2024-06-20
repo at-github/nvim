@@ -1,11 +1,11 @@
 require('gitsigns').setup {
   signs = {
-    delete = {
-      hl = 'GitSignsDelete',
-      text = '-',
-      numhl='GitSignsDeleteNr',
-      linehl='GitSignsDeleteLn'
-    }
+    add          = { text = '┃' },
+    change       = { text = '┃' },
+    delete       = { text = '_' },
+    topdelete    = { text = '‾' },
+    changedelete = { text = '~' },
+    untracked    = { text = '┆' },
   },
   current_line_blame = true,
   on_attach = function(bufnr)
