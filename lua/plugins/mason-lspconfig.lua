@@ -16,7 +16,7 @@ mason_lspconfig.setup({
     'solargraph',
     'sqlls',
     'tailwindcss',
-    'tsserver',
+    'ts_ls',
     'volar',
     'yamlls'
   },
