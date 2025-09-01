@@ -17,10 +17,7 @@ mason_lspconfig.setup({
     'sqlls',
     'tailwindcss',
     'ts_ls',
-    'volar',
+    'vue_ls',
     'yamlls'
   },
-  pip = {
-    upgrade_pip = true
-  }
 })
