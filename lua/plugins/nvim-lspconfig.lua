@@ -1,6 +1,5 @@
 local lspconfig = require'lspconfig'
 local cmp_nvim_lsp = require'cmp_nvim_lsp'
-local typescript = require'typescript'
 
 local keymap = vim.keymap -- for conciseness
 
@@ -23,13 +22,6 @@ local on_attach = function(client, bufnr)
   keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>", opts) -- show documentation for what is under cursor
   keymap.set("n", "<leader>s", "<cmd>LSoutlineToggle<CR>", opts) -- see outline on right hand side
   keymap.set("n", "<space>f", "<cmd>lua vim.lsp.buf.format {async = true}<CR>", opts) -- format current buffer
-
-  -- typescript specific keymaps (e.g. rename file and update imports)
-  if client.name == "ts_ls" then
-    keymap.set("n", "<leader>rf", ":TypescriptRenameFile<CR>") -- rename file and update imports
-    keymap.set("n", "<leader>oi", ":TypescriptOrganizeImports<CR>") -- organize imports (not in youtube nvim video)
-    keymap.set("n", "<leader>ru", ":TypescriptRemoveUnused<CR>") -- remove unused variables (not in youtube nvim video)
-  end
 end
 
 -- used to enable autocompletion (assign to every lsp server config)
@@ -47,13 +39,6 @@ end
 lspconfig["html"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
-})
-
-typescript.setup({
-  server = {
-    capabilities = capabilities,
-    on_attach = on_attach,
-  },
 })
 
 lspconfig["cssls"].setup({

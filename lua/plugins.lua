@@ -106,7 +106,6 @@ return require('packer').startup(function(use)
     end
   }
   use 'inkarkat/vim-ReplaceWithRegister' -- Replace with register contents using motion (gr + motion)
-  use 'jose-elias-alvarez/typescript.nvim' -- Additional functionality for typescript server (e.g. rename file & update imports)
   use 'nelstrom/vim-visual-star-search' -- Search based selection
   use 'junegunn/vim-easy-align'
   use({
