@@ -70,7 +70,7 @@ opt.splitbelow = true
 
 -- Preview README.md
 -- Way found here: https://dev.to/____marcell/how-to-create-an-ui-menu-in-neovim-2k6a
-local popup = require("plenary.popup")
+local status = pcall(require, "plenary.popup")
 local buffer_id
 
 function ShowPopup(content, cb)
